@@ -1,5 +1,6 @@
 import React from "react";
 import "../static/home.css";
+import logo from "../static/logo7.png";
 import {
   MDBCarousel,
   MDBCarouselItem,
@@ -13,9 +14,45 @@ import {
   MDBContainer,
 } from "mdb-react-ui-kit";
 
+import useWindowSize from "../utils/userWindowSize";
+
 const Home = () => {
+  const size = useWindowSize();
   return (
     <>
+      <MDBContainer className="my-3">
+        {size.width > 1000 ? (
+          <MDBRow center>
+            <MDBCol size="4">
+              <img
+                src={logo}
+                style={{ width: 400, height: "auto" }}
+                className="img-fluid"
+                alt="..."
+              />
+            </MDBCol>
+            <MDBCol size="4">
+              <p>
+                Cillum nisi sit dolore aliquip adipisicing tempor qui tempor
+                fugiat <a href="#">Learn More...</a>
+              </p>
+            </MDBCol>
+          </MDBRow>
+        ) : (
+          <>
+            <img
+              src={logo}
+              style={{ width: 400, height: "auto" }}
+              className="img-fluid"
+              alt="..."
+            />
+            <p>
+              Cillum nisi sit dolore aliquip adipisicing tempor qui tempor
+              fugiat <a href="#">Learn More...</a>
+            </p>
+          </>
+        )}
+      </MDBContainer>
       <MDBContainer className="px-0" fluid>
         <MDBCarousel fade>
           <MDBCarouselItem itemId={1} interval={1700}>

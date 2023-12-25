@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../static/logo7.png";
 import "../static/navbar.css";
 import useWindowSize from "../utils/userWindowSize";
 import {
@@ -19,9 +18,22 @@ export default function Navbar() {
   const size = useWindowSize();
 
   return (
-    <MDBContainer className="bg-nav pt-2" fluid>
+    <MDBContainer className="bg-nav" fluid>
+      <MDBContainer className="text-center p-2">
+        {/* <img
+          src={logo}
+          style={{ width: 300, height: "auto" }}
+          className="img-fluid shadow-4"
+          alt="..."
+        /> */}
+      </MDBContainer>
       <MDBContainer>
-        <MDBNavbar expand="lg" light bgColor="light">
+        <MDBNavbar
+          className="rounded rounded-3"
+          expand="lg"
+          light
+          bgColor="light"
+        >
           <MDBContainer className="padding-navbar" fluid>
             <MDBNavbarToggler
               type="button"

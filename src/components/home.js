@@ -16,13 +16,6 @@ import {
 const Home = () => {
   return (
     <>
-      <MDBContainer breakpoint="sm" className="space-home shadow-3" fluid>
-        <p className="moving-text m-0 text-end">
-          Join us in celebrating a century of academic excellence at Nutan
-          Vidarbha Shikshan Mandal's New High School Mains, Amravati – 100 years
-          of shaping minds and creating memories!
-        </p>
-      </MDBContainer>
       <MDBContainer className="px-0" fluid>
         <MDBCarousel fade>
           <MDBCarouselItem itemId={1} interval={1700}>

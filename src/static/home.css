@@ -1,0 +1,44 @@
+body,
+html {
+  height: 100%;
+  padding-top: 3.3%;
+}
+
+.space-home {
+  padding-top: 0.4%;
+  background-color: bisque;
+}
+
+.bg_principle {
+  background-color: blanchedalmond;
+  border-radius: 20px;
+}
+
+.moving-text {
+  animation: moveText 15s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body,
+  html {
+    height: 100%;
+    padding-top: 12.5%;
+  }
+
+  .space-home {
+    height: 27px;
+    white-space: nowrap;
+    text-overflow: clip;
+  }
+  .moving-text {
+  }
+}

@@ -12,6 +12,7 @@ import {
   MDBRow,
   MDBCol,
   MDBContainer,
+  MDBTypography,
 } from "mdb-react-ui-kit";
 
 import useWindowSize from "../utils/userWindowSize";
@@ -20,7 +21,7 @@ const Home = () => {
   const size = useWindowSize();
   return (
     <>
-      <MDBContainer className="my-3">
+      <MDBContainer className="my-3 text-center">
         {size.width > 1000 ? (
           <MDBRow center>
             <MDBCol size="4">
@@ -78,10 +79,77 @@ const Home = () => {
           </MDBCarouselItem>
         </MDBCarousel>
       </MDBContainer>
+
       <br />
       <br />
+      <MDBContainer className="get-features p-5" fluid>
+        <MDBContainer>
+          <MDBRow className="row-cols-1 row-cols-md-2 g-4">
+            <MDBCol>
+              <MDBCard>
+                <MDBCardBody>
+                  <MDBCardTitle>Card title</MDBCardTitle>
+                  <MDBCardText>
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol>
+              <MDBCard>
+                <MDBCardBody>
+                  <MDBCardTitle>Card title</MDBCardTitle>
+                  <MDBCardText>
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol>
+              <MDBCard>
+                <MDBCardBody>
+                  <MDBCardTitle>Card title</MDBCardTitle>
+                  <MDBCardText>
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol>
+              <MDBCard>
+                <MDBCardBody>
+                  <MDBCardTitle>Card title</MDBCardTitle>
+                  <MDBCardText>
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      </MDBContainer>
+
+      <br />
+      <br />
+
       <MDBContainer className="bg_principle p-5">
-        <p className="fw-bold fs-1">FROM THE PRINCIPAL’s DESK!</p>
+        <figure className="text-start fs-2 mb-0">
+          <MDBTypography blockquote>
+            <p>Message!</p>
+          </MDBTypography>
+          <figcaption className="blockquote-footer mb-0">
+            From the <cite title="Source Title">Principle’s Desk!</cite>
+          </figcaption>
+        </figure>
+        <p className="fw-bold lead fs-1"></p>
         <MDBCard style={{ maxWidth: "700px" }}>
           <MDBRow className="g-0">
             <MDBCol md="4">
@@ -114,81 +182,6 @@ const Home = () => {
           Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis
           consectetur purus sit amet fermentum.
         </p>
-      </MDBContainer>
-
-      <br />
-      <br />
-      <MDBContainer>
-        <MDBRow className="row-cols-1 row-cols-md-2 g-4">
-          <MDBCol>
-            <MDBCard>
-              <MDBCardImage
-                src="https://mdbootstrap.com/img/new/standard/city/041.webp"
-                alt="..."
-                position="top"
-              />
-              <MDBCardBody>
-                <MDBCardTitle>Card title</MDBCardTitle>
-                <MDBCardText>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </MDBCardText>
-              </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-          <MDBCol>
-            <MDBCard>
-              <MDBCardImage
-                src="https://mdbootstrap.com/img/new/standard/city/042.webp"
-                alt="..."
-                position="top"
-              />
-              <MDBCardBody>
-                <MDBCardTitle>Card title</MDBCardTitle>
-                <MDBCardText>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </MDBCardText>
-              </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-          <MDBCol>
-            <MDBCard>
-              <MDBCardImage
-                src="https://mdbootstrap.com/img/new/standard/city/043.webp"
-                alt="..."
-                position="top"
-              />
-              <MDBCardBody>
-                <MDBCardTitle>Card title</MDBCardTitle>
-                <MDBCardText>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </MDBCardText>
-              </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-          <MDBCol>
-            <MDBCard>
-              <MDBCardImage
-                src="https://mdbootstrap.com/img/new/standard/city/044.webp"
-                alt="..."
-                position="top"
-              />
-              <MDBCardBody>
-                <MDBCardTitle>Card title</MDBCardTitle>
-                <MDBCardText>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </MDBCardText>
-              </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-        </MDBRow>
       </MDBContainer>
     </>
   );

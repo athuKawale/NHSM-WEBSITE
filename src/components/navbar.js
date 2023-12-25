@@ -19,14 +19,7 @@ export default function Navbar() {
 
   return (
     <MDBContainer className="bg-nav" fluid>
-      <MDBContainer className="text-center p-2">
-        {/* <img
-          src={logo}
-          style={{ width: 300, height: "auto" }}
-          className="img-fluid shadow-4"
-          alt="..."
-        /> */}
-      </MDBContainer>
+      <MDBContainer className="text-center p-2"></MDBContainer>
       <MDBContainer>
         <MDBNavbar
           className="rounded rounded-3"

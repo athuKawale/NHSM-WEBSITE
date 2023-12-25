@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../static/logo7.png";
 import "../static/navbar.css";
+import useWindowSize from "../utils/userWindowSize";
 import {
   MDBContainer,
   MDBNavbar,
@@ -15,6 +16,7 @@ import {
 
 export default function Navbar() {
   const [openNavCentred, setOpenNavCentred] = useState(false);
+  const size = useWindowSize();
 
   return (
     <MDBContainer className="bg-nav pt-2" fluid>
@@ -39,49 +41,54 @@ export default function Navbar() {
               id="navbarCenteredExample"
             >
               <MDBNavbarNav fullWidth={false} className="mb-2 mb-lg-0">
-                <MDBNavbarItem className="px-5">
+                <MDBNavbarItem className="px-5 mx-1">
                   <MDBNavbarLink active aria-current="page" href="/">
                     Home
                   </MDBNavbarLink>
                 </MDBNavbarItem>
 
-                <MDBNavbarItem className="px-5">
+                <MDBNavbarItem className="px-5 mx-1">
                   <MDBNavbarLink href="/about">About</MDBNavbarLink>
                 </MDBNavbarItem>
 
-                <MDBNavbarItem className="px-5">
+                <MDBNavbarItem className="px-5 mx-1">
                   <MDBNavbarLink href="/academics">Academics</MDBNavbarLink>
                 </MDBNavbarItem>
 
-                <MDBNavbarItem className="px-5">
+                <MDBNavbarItem className="px-5 mx-1">
                   <MDBNavbarLink href="/events">Events</MDBNavbarLink>
                 </MDBNavbarItem>
 
-                <MDBNavbarItem className="px-5">
+                <MDBNavbarItem className="px-5 mx-1">
                   <MDBNavbarLink href="/photogallery">
                     PhotoGallery
                   </MDBNavbarLink>
                 </MDBNavbarItem>
 
-                <MDBNavbarItem className="px-5">
+                <MDBNavbarItem className="px-5 mx-1">
                   <MDBNavbarLink href="/alumini">Alumini</MDBNavbarLink>
                 </MDBNavbarItem>
 
-                <MDBNavbarItem className="px-5">
-                  <MDBNavbarLink href="/contact">Contact</MDBNavbarLink>
+                <MDBNavbarItem className="ps-5 mx-1">
+                  <MDBNavbarLink href="/contact">Contact Us</MDBNavbarLink>
                 </MDBNavbarItem>
               </MDBNavbarNav>
             </MDBCollapse>
           </MDBContainer>
         </MDBNavbar>
       </MDBContainer>
-      <MDBContainer breakpoint="sm" className="moving-text-cont" fluid>
-        <p className="moving-text m-0">
-          Join us in celebrating a century of academic excellence at Nutan
-          Vidarbha Shikshan Mandal's New High School Mains, Amravati – 100 years
-          of shaping minds and creating memories!
-        </p>
-      </MDBContainer>
+
+      {size.width > 1800 ? (
+        <MDBContainer breakpoint="sm" className="moving-text-cont" fluid>
+          <p className="moving-text m-0">
+            Join us in celebrating a century of academic excellence at Nutan
+            Vidarbha Shikshan Mandal's New High School Mains, Amravati – 100
+            years of shaping minds and creating memories!
+          </p>
+        </MDBContainer>
+      ) : (
+        <MDBContainer className="py-2"></MDBContainer>
+      )}
     </MDBContainer>
   );
 }

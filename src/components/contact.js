@@ -11,6 +11,7 @@ import {
 } from "mdb-react-ui-kit";
 import "../static/contact.css";
 import Footer from "./footer";
+import Map from "../utils/map";
 
 const Contact = () => {
   return (
@@ -99,9 +100,15 @@ const Contact = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
+
+      <MDBContainer className="pb-5 px-5">
+        <Map />
+      </MDBContainer>
       <Footer />
     </>
   );
 };
 
 export default Contact;
+
+//AIzaSyDmns_oO-ywOHEObdWcN1AtNQHAEoMetvA

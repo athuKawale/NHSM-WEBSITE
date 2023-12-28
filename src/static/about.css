@@ -1,0 +1,18 @@
+.about-cont {
+  background-image: url("./about1.jpg");
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 70px;
+  color: white;
+  opacity: 0.9;
+}
+
+.about-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.about-bg {
+  background-color: whitesmoke;
+}

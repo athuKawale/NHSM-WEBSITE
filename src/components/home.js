@@ -13,9 +13,13 @@ import {
   MDBCol,
   MDBContainer,
   MDBTypography,
+  MDBProgress,
+  MDBProgressBar,
 } from "mdb-react-ui-kit";
 
 import useWindowSize from "../utils/userWindowSize";
+import Footer from "./footer";
+import Testimonials from "../utils/testimonials";
 
 const Home = () => {
   const size = useWindowSize();
@@ -84,15 +88,17 @@ const Home = () => {
       <br />
       <MDBContainer className="get-features p-5" fluid>
         <MDBContainer>
-          <MDBRow className="row-cols-1 row-cols-md-2 g-4">
+          <MDBRow className="row-cols-1 row-cols-md-2 g-4 text-center">
             <MDBCol>
               <MDBCard>
                 <MDBCardBody>
-                  <MDBCardTitle>Card title</MDBCardTitle>
+                  <MDBCardTitle>Interactive Board</MDBCardTitle>
                   <MDBCardText>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                    Transforming traditional classrooms, our interactive boards
+                    facilitate engaging and dynamic learning experiences. With
+                    touch-sensitive technology and interactive software,
+                    educators can create immersive lessons, fostering a
+                    participatory environment for students.
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
@@ -100,11 +106,14 @@ const Home = () => {
             <MDBCol>
               <MDBCard>
                 <MDBCardBody>
-                  <MDBCardTitle>Card title</MDBCardTitle>
+                  <MDBCardTitle>Solar Energy Project</MDBCardTitle>
                   <MDBCardText>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                    Committing to sustainability, our solar energy project
+                    harnesses renewable power to reduce our carbon footprint.
+                    Through strategically placed solar panels, we generate clean
+                    electricity, providing an eco-friendly solution and serving
+                    as an educational tool for students interested in
+                    environmental conservation.
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
@@ -112,11 +121,14 @@ const Home = () => {
             <MDBCol>
               <MDBCard>
                 <MDBCardBody>
-                  <MDBCardTitle>Card title</MDBCardTitle>
+                  <MDBCardTitle>Advanced Computer Labs</MDBCardTitle>
                   <MDBCardText>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                    Our computer labs, armed with cutting-edge tech, offer an
+                    ideal space for students to develop digital skills.
+                    High-performance computers and modern software empower
+                    exploration in programming, design, and other computing
+                    disciplines, promoting innovation and keeping pace with tech
+                    advancements.
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
@@ -124,11 +136,42 @@ const Home = () => {
             <MDBCol>
               <MDBCard>
                 <MDBCardBody>
-                  <MDBCardTitle>Card title</MDBCardTitle>
+                  <MDBCardTitle>Seminar Hall</MDBCardTitle>
                   <MDBCardText>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                    Our spacious seminar hall is a hub for intellectual
+                    exchange. Designed for seminars, workshops, and conferences,
+                    it offers a platform for experts and thought leaders to
+                    share insights, fostering a culture of intellectual
+                    curiosity among students and the broader community.
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol>
+              <MDBCard>
+                <MDBCardBody>
+                  <MDBCardTitle>School Vans and Buses</MDBCardTitle>
+                  <MDBCardText>
+                    Ensuring safe and reliable transportation, our fleet of
+                    school vans and buses, operated by trained drivers, provides
+                    students with a secure commute. This service not only
+                    facilitates access to education but also gives parents
+                    confidence that their children are in capable hands during
+                    their journeys.
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol>
+              <MDBCard>
+                <MDBCardBody>
+                  <MDBCardTitle>Library</MDBCardTitle>
+                  <MDBCardText>
+                    Our library, a haven for avid readers, houses a diverse
+                    collection of books, journals, and digital resources. With
+                    dedicated study areas, it serves as a focal point for
+                    academic excellence, encouraging students to delve into the
+                    joy of reading and expand their intellectual horizons.
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
@@ -183,6 +226,86 @@ const Home = () => {
           consectetur purus sit amet fermentum.
         </p>
       </MDBContainer>
+
+      <br />
+      <br />
+
+      <MDBContainer className="padding-percent fw-bold text-center" fluid>
+        <h2 className="fs-1 fst-italic font-monospace">
+          Percent bar for school performance!
+        </h2>
+        <p className="fs-3 pt-4 font-monospace">Passing Percentage</p>
+        <MDBProgress height="20">
+          <MDBProgressBar
+            className="rounded"
+            striped
+            animated
+            bgColor="success"
+            width="98"
+            valuemin={0}
+            valuemax={100}
+          >
+            98%
+          </MDBProgressBar>
+        </MDBProgress>
+
+        <p className="fs-3 pt-4 font-monospace">
+          Critical Thinking and Problem-Solving
+        </p>
+        <MDBProgress height="20">
+          <MDBProgressBar
+            className="rounded"
+            striped
+            animated
+            bgColor="info"
+            width="62"
+            valuemin={0}
+            valuemax={100}
+          >
+            62%
+          </MDBProgressBar>
+        </MDBProgress>
+
+        <p className="fs-3 pt-4 font-monospace">Parental Involvement</p>
+        <MDBProgress height="20">
+          <MDBProgressBar
+            className="rounded"
+            striped
+            animated
+            bgColor="warning"
+            width="40"
+            valuemin={0}
+            valuemax={100}
+          >
+            40%
+          </MDBProgressBar>
+        </MDBProgress>
+
+        <p className="fs-3 pt-4 font-monospace">
+          Effort / Improvement & Classroom Behavior
+        </p>
+        <MDBProgress height="20">
+          <MDBProgressBar
+            className="rounded"
+            striped
+            animated
+            width="92"
+            valuemin={0}
+            valuemax={100}
+          >
+            92%
+          </MDBProgressBar>
+        </MDBProgress>
+      </MDBContainer>
+
+      <br />
+      <br />
+
+      <Testimonials />
+
+      <br />
+      <br />
+      <Footer />
     </>
   );
 };

@@ -1,0 +1,9 @@
+.contact-cont {
+  background-image: url("./contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 70px;
+  color: black;
+  opacity: 0.9;
+}

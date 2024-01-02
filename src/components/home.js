@@ -59,7 +59,7 @@ const Home = () => {
         )}
       </MDBContainer>
       <MDBContainer className="px-0" fluid>
-        <MDBCarousel fade>
+        <MDBCarousel showIndicators showControls fade>
           <MDBCarouselItem itemId={1} interval={1700}>
             <img
               src="https://mdbootstrap.com/img/new/slides/041.jpg"

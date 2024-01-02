@@ -11,6 +11,10 @@ import {
   MDBNavbarToggler,
   MDBCollapse,
   MDBIcon,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem,
 } from "mdb-react-ui-kit";
 
 export default function Navbar() {
@@ -53,7 +57,25 @@ export default function Navbar() {
                 </MDBNavbarItem>
 
                 <MDBNavbarItem className="px-5 mx-1">
-                  <MDBNavbarLink href="/about">About</MDBNavbarLink>
+                  <MDBDropdown>
+                    <MDBDropdownToggle
+                      tag="a"
+                      className="nav-link"
+                      role="button"
+                    >
+                      About
+                    </MDBDropdownToggle>
+                    <MDBDropdownMenu>
+                      <MDBDropdownItem link>
+                        <MDBNavbarLink href="/history">
+                          Our History
+                        </MDBNavbarLink>
+                      </MDBDropdownItem>
+                      <MDBDropdownItem link>
+                        <MDBNavbarLink href="/about">About Us</MDBNavbarLink>
+                      </MDBDropdownItem>
+                    </MDBDropdownMenu>
+                  </MDBDropdown>
                 </MDBNavbarItem>
 
                 <MDBNavbarItem className="px-5 mx-1">

@@ -55,47 +55,49 @@ const Contact = () => {
             <div>
               <p className="fs-4">Have Any Questions? Let Us Know</p>
               <p className="pb-2">_______________</p>
-              <MDBInputGroup className="mb-4">
-                <input
-                  className="form-control"
-                  type="text"
-                  placeholder="Name*"
-                />
-              </MDBInputGroup>
-              <MDBInputGroup className="mb-4">
-                <input
-                  className="form-control"
-                  type="text"
-                  placeholder="Phone*"
-                />
-              </MDBInputGroup>
-              <MDBInputGroup className="mb-4" textAfter="@gmail.com">
-                <input
-                  className="form-control"
-                  type="text"
-                  placeholder="Email*"
-                />
-              </MDBInputGroup>
-              <MDBInputGroup
-                className="mb-4"
-                textTag="div"
-                textBefore={<MDBCheckbox />}
-              >
-                <input
-                  className="form-control"
-                  type="text"
-                  placeholder="From Amravati?"
-                />
-              </MDBInputGroup>
+              <form>
+                <MDBInputGroup className="mb-4">
+                  <input
+                    className="form-control"
+                    type="text"
+                    placeholder="Name*"
+                  />
+                </MDBInputGroup>
+                <MDBInputGroup className="mb-4">
+                  <input
+                    className="form-control"
+                    type="text"
+                    placeholder="Phone*"
+                  />
+                </MDBInputGroup>
+                <MDBInputGroup className="mb-4" textAfter="@gmail.com">
+                  <input
+                    className="form-control"
+                    type="text"
+                    placeholder="Email*"
+                  />
+                </MDBInputGroup>
+                <MDBInputGroup
+                  className="mb-4"
+                  textTag="div"
+                  textBefore={<MDBCheckbox />}
+                >
+                  <input
+                    className="form-control"
+                    type="text"
+                    placeholder="From Amravati?"
+                  />
+                </MDBInputGroup>
 
-              <MDBInputGroup className="mb-4">
-                <MDBTextArea label="Message*" id="textAreaExample" rows={4} />
-              </MDBInputGroup>
-              <div className="text-center">
-                <MDBBtn outline rounded className="mx-auto" color="dark">
-                  Dark
-                </MDBBtn>
-              </div>
+                <MDBInputGroup className="mb-4">
+                  <MDBTextArea label="Message*" id="textAreaExample" rows={4} />
+                </MDBInputGroup>
+                <div className="text-center">
+                  <MDBBtn outline rounded className="mx-auto" color="dark">
+                    Dark
+                  </MDBBtn>
+                </div>
+              </form>
             </div>
           </MDBCol>
         </MDBRow>

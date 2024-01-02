@@ -8,6 +8,7 @@ import Contact from "./components/contact";
 import Academics from "./components/academics";
 import PhotoGallery from "./components/photogallery";
 import Alumini from "./components/alumini";
+import History from "./components/history";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Route exact path="/" element={<Home />} />
 
           <Route path="/about" element={<About />} />
+
+          <Route path="/history" element={<History />} />
 
           <Route path="/academics" element={<Academics />} />
 

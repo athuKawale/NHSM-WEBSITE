@@ -1,11 +1,16 @@
+.custom-cursor {
+  cursor: url("../images/cursor.png") 10 10, auto;
+}
+
 .bg_principle {
-  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+  /* background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
     radial-gradient(
       91% 146%,
       rgba(255, 255, 255, 0.5) 47%,
       rgba(0, 0, 0, 0.5) 100%
     );
-  background-blend-mode: screen;
+  background-blend-mode: screen; */
+  background-color: floralwhite;
   border-radius: 20px;
 }
 
@@ -18,13 +23,14 @@
 }
 
 .card_body_principle {
-  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+  /* background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
     radial-gradient(
       91% 146%,
       rgba(255, 255, 255, 0.5) 47%,
       rgba(0, 0, 0, 0.5) 100%
     );
-  background-blend-mode: screen;
+  background-blend-mode: screen; */
+  background-color: floralwhite;
 }
 
 .get-features {
@@ -44,6 +50,9 @@
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
+.truncated-text {
+}
+
 @media only screen and (max-width: 1800px) {
   .padding-percent {
     padding-left: 16px;
@@ -51,5 +60,19 @@
     padding-top: 50px;
     padding-bottom: 50px;
     border-radius: 20px;
+  }
+
+  .truncated-text {
+    white-space: nowrap; /* Prevent text from wrapping onto the next line */
+    overflow: hidden; /* Hide any content that overflows the box */
+    text-overflow: ellipsis; /* Display an ellipsis (...) to indicate truncated text */
+    max-width: 200px; /* Set a maximum width for the container */
+    transition: max-width 0.3s ease;
+  }
+
+  .truncated-text:hover {
+    text-align: justify;
+    white-space: normal; /* Allow text to wrap */
+    max-width: none; /* Remove the max-width limit on hover or click */
   }
 }

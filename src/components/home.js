@@ -16,6 +16,7 @@ import {
   MDBProgress,
   MDBProgressBar,
   MDBIcon,
+  MDBRipple,
 } from "mdb-react-ui-kit";
 
 import useWindowSize from "../utils/userWindowSize";
@@ -25,17 +26,19 @@ import Testimonials from "../utils/testimonials";
 const Home = () => {
   const size = useWindowSize();
   return (
-    <>
+    <div className="custom-cursor">
       <MDBContainer className="my-3 text-center">
         {size.width > 1000 ? (
           <MDBRow center>
             <MDBCol size="4">
-              <img
-                src={logo}
-                style={{ width: 400, height: "auto" }}
-                className="img-fluid"
-                alt="..."
-              />
+              <MDBRipple rippleTag="a">
+                <img
+                  src={logo}
+                  style={{ width: 400, height: "auto" }}
+                  className="img-fluid"
+                  alt="..."
+                />
+              </MDBRipple>
             </MDBCol>
             <MDBCol size="4">
               <p>
@@ -61,26 +64,32 @@ const Home = () => {
       </MDBContainer>
       <MDBContainer className="px-0" fluid>
         <MDBCarousel showIndicators showControls fade>
-          <MDBCarouselItem itemId={1} interval={1700}>
-            <img
-              src={require("../static/images/image_home/carousel1.JPG")}
-              className="d-block w-100"
-              alt="..."
-            />
+          <MDBCarouselItem itemId={1} interval={3000}>
+            <MDBRipple rippleTag="a">
+              <img
+                src={require("../static/images/image_home/carousel1.JPG")}
+                className="d-block w-100"
+                alt="..."
+              />
+            </MDBRipple>
           </MDBCarouselItem>
-          <MDBCarouselItem itemId={2} interval={1700}>
-            <img
-              src={require("../static/images/image_home/carousel.JPG")}
-              className="d-block w-100"
-              alt="..."
-            />
+          <MDBCarouselItem itemId={2} interval={3000}>
+            <MDBRipple rippleTag="a">
+              <img
+                src={require("../static/images/image_home/carousel.JPG")}
+                className="d-block w-100"
+                alt="..."
+              />
+            </MDBRipple>
           </MDBCarouselItem>
           <MDBCarouselItem itemId={3} interval={1700}>
-            <img
-              src={require("../static/images/image_home/carousel3.JPG")}
-              className="d-block w-100"
-              alt="..."
-            />
+            <MDBRipple rippleTag="a">
+              <img
+                src={require("../static/images/image_home/carousel3.JPG")}
+                className="d-block w-100"
+                alt="..."
+              />
+            </MDBRipple>
           </MDBCarouselItem>
         </MDBCarousel>
       </MDBContainer>
@@ -95,7 +104,7 @@ const Home = () => {
                 <MDBCardBody>
                   <MDBCardTitle>Interactive Board</MDBCardTitle>
                   <MDBIcon className="ms-1 p-2" icon="chalkboard" size="8x" />
-                  <MDBCardText>
+                  <MDBCardText className="truncated-text">
                     Our interactive boards transform classrooms into dynamic
                     learning spaces, fostering engagement with touch-sensitive
                     technology and interactive software for immersive lessons.
@@ -108,7 +117,7 @@ const Home = () => {
                 <MDBCardBody>
                   <MDBCardTitle>Solar Energy Project</MDBCardTitle>
                   <MDBIcon className="ms-1 p-2" icon="solar-panel" size="8x" />
-                  <MDBCardText>
+                  <MDBCardText className="truncated-text">
                     Our solar energy project reduces our carbon footprint by
                     harnessing renewable power through strategically placed
                     solar panels, providing clean electricity and serving as an
@@ -122,7 +131,7 @@ const Home = () => {
                 <MDBCardBody>
                   <MDBCardTitle>Advanced Computer Labs</MDBCardTitle>
                   <MDBIcon className="ms-1 p-2" icon="desktop" size="8x" />
-                  <MDBCardText>
+                  <MDBCardText className="truncated-text">
                     Our cutting-edge computer labs empower students to develop
                     digital skills in programming, design, and computing
                     disciplines. High-performance computers and modern software
@@ -137,7 +146,7 @@ const Home = () => {
                 <MDBCardBody>
                   <MDBCardTitle>Seminar Hall</MDBCardTitle>
                   <MDBIcon className="ms-1 p-2" icon="home" size="8x" />
-                  <MDBCardText>
+                  <MDBCardText className="truncated-text">
                     Our spacious seminar hall is a hub for intellectual
                     exchange, designed for seminars, workshops, and conferences.
                     It provides a platform for experts and thought leaders to
@@ -152,7 +161,7 @@ const Home = () => {
                 <MDBCardBody>
                   <MDBCardTitle>School Vans and Buses</MDBCardTitle>
                   <MDBIcon className="ms-1 p-2" icon="bus-alt" size="8x" />
-                  <MDBCardText>
+                  <MDBCardText className="truncated-text">
                     Our school vans and buses, ensure safe and reliable
                     transportation, providing students with a secure commute.
                     This service facilitates access to education and gives
@@ -167,7 +176,7 @@ const Home = () => {
                 <MDBCardBody>
                   <MDBCardTitle>Library</MDBCardTitle>
                   <MDBIcon className="ms-1 p-2" icon="book-open" size="8x" />
-                  <MDBCardText>
+                  <MDBCardText className="truncated-text">
                     Our library, a haven for avid readers, houses a diverse
                     collection of books, journals, and digital resources. With
                     dedicated study areas, it encourages academic excellence and
@@ -195,31 +204,35 @@ const Home = () => {
           </figcaption>
         </figure>
         <p className="fw-bold lead fs-1"></p>
-        <MDBCard className="card_principle shadow">
-          <MDBRow className="g-0">
-            <MDBCol md="6">
-              <MDBCardImage
-                className="rounded border"
-                src={require("../static/images/image_home/principle.JPG")}
-                alt="..."
-                fluid
-              />
-            </MDBCol>
-            <MDBCol className="card_body_principle" md="6">
-              <MDBCardBody>
-                <MDBCardTitle>Priciple Mam Picture</MDBCardTitle>
-                <MDBCardText>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </MDBCardText>
-                <MDBCardText>
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </MDBCardText>
-              </MDBCardBody>
-            </MDBCol>
-          </MDBRow>
-        </MDBCard>
+        <div className="text-center">
+          <MDBCard className="card_principle shadow">
+            <MDBRow className="g-0">
+              <MDBCol md="6">
+                <MDBCardImage
+                  className="rounded border"
+                  src={require("../static/images/image_home/principle.JPG")}
+                  alt="..."
+                  fluid
+                />
+              </MDBCol>
+              <MDBCol className="card_body_principle" md="6">
+                <MDBCardBody>
+                  <MDBCardTitle>Priciple Mam Picture</MDBCardTitle>
+                  <MDBCardText>
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </MDBCardText>
+                  <MDBCardText>
+                    <small className="text-muted">
+                      Last updated 3 mins ago
+                    </small>
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCol>
+            </MDBRow>
+          </MDBCard>
+        </div>
 
         <p className="lh-lg py-5 fs-3">
           Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
@@ -236,7 +249,9 @@ const Home = () => {
 
       <MDBContainer className="padding-percent fw-bold text-center" fluid>
         <h2 className="fs-1 fst-italic">Percent bar for school performance!</h2>
-        <p>--------------------------------------------------------------</p>
+        <p>
+          -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
         <p className="fs-3 pt-4">Passing Percentage</p>
         <MDBProgress height="20">
           <MDBProgressBar
@@ -307,7 +322,7 @@ const Home = () => {
       <br />
       <br />
       <Footer />
-    </>
+    </div>
   );
 };
 

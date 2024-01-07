@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MDBContainer } from "mdb-react-ui-kit";
-import "../static/testimonials.css";
+import "../static/css/testimonials.css";
 
 const items = [
   "Enim non adipisicing cillum qui Lorem tempor proident ex consequat. Eiusmod laboris exercitation consectetur Lorem laborum dolor proident dolor Lorem incididunt ad laborum. Cillum ad ut ex pariatur aliquip deserunt commodo cillum non duis. Reprehenderit ea ea nulla reprehenderit exercitation. Est anim et Lorem in dolore elit quis in exercitation officia ad laborum ipsum reprehenderit. --Parents Name",
@@ -24,7 +24,7 @@ const Testimonials = () => {
       <div
         className="p-5 rounded rounded-7"
         style={{
-          backgroundColor: "crimson",
+          backgroundColor: "black",
           color: "white",
           fontFamily: "sans-serif",
           opacity: 0.8,

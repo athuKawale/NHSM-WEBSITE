@@ -9,7 +9,7 @@ import {
   MDBCheckbox,
   MDBBtn,
 } from "mdb-react-ui-kit";
-import "../static/contact.css";
+import "../static/css/contact.css";
 import Footer from "./footer";
 import Map from "../utils/map";
 

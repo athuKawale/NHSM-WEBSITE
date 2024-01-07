@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../static/navbar.css";
+import "../static/css/navbar.css";
 import useWindowSize from "../utils/userWindowSize";
 import {
   MDBContainer,
@@ -73,6 +73,9 @@ export default function Navbar() {
                       </MDBDropdownItem>
                       <MDBDropdownItem link>
                         <MDBNavbarLink href="/about">About Us</MDBNavbarLink>
+                      </MDBDropdownItem>
+                      <MDBDropdownItem link>
+                        <MDBNavbarLink href="/staff">Our Staff</MDBNavbarLink>
                       </MDBDropdownItem>
                     </MDBDropdownMenu>
                   </MDBDropdown>

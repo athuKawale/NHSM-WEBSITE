@@ -1,5 +1,5 @@
 import React from "react";
-import "../static/home.css";
+import "../static/css/home.css";
 import logo from "../static/logo7.png";
 import {
   MDBCarousel,
@@ -15,6 +15,7 @@ import {
   MDBTypography,
   MDBProgress,
   MDBProgressBar,
+  MDBIcon,
 } from "mdb-react-ui-kit";
 
 import useWindowSize from "../utils/userWindowSize";
@@ -62,21 +63,21 @@ const Home = () => {
         <MDBCarousel showIndicators showControls fade>
           <MDBCarouselItem itemId={1} interval={1700}>
             <img
-              src="https://mdbootstrap.com/img/new/slides/041.jpg"
+              src={require("../static/images/image_home/carousel1.JPG")}
               className="d-block w-100"
               alt="..."
             />
           </MDBCarouselItem>
           <MDBCarouselItem itemId={2} interval={1700}>
             <img
-              src="https://mdbootstrap.com/img/new/slides/042.jpg"
+              src={require("../static/images/image_home/carousel.JPG")}
               className="d-block w-100"
               alt="..."
             />
           </MDBCarouselItem>
           <MDBCarouselItem itemId={3} interval={1700}>
             <img
-              src="https://mdbootstrap.com/img/new/slides/043.jpg"
+              src={require("../static/images/image_home/carousel3.JPG")}
               className="d-block w-100"
               alt="..."
             />
@@ -88,59 +89,58 @@ const Home = () => {
       <br />
       <MDBContainer className="get-features p-5" fluid>
         <MDBContainer>
-          <MDBRow className="row-cols-1 row-cols-md-2 g-4 text-center">
+          <MDBRow className="row-cols-1 row-cols-md-2 g-3 text-center">
             <MDBCol>
-              <MDBCard>
+              <MDBCard className="feature_card">
                 <MDBCardBody>
                   <MDBCardTitle>Interactive Board</MDBCardTitle>
+                  <MDBIcon className="ms-1 p-2" icon="chalkboard" size="8x" />
                   <MDBCardText>
-                    Transforming traditional classrooms, our interactive boards
-                    facilitate engaging and dynamic learning experiences. With
-                    touch-sensitive technology and interactive software,
-                    educators can create immersive lessons, fostering a
-                    participatory environment for students.
+                    Our interactive boards transform classrooms into dynamic
+                    learning spaces, fostering engagement with touch-sensitive
+                    technology and interactive software for immersive lessons.
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
             <MDBCol>
-              <MDBCard>
+              <MDBCard className="feature_card">
                 <MDBCardBody>
                   <MDBCardTitle>Solar Energy Project</MDBCardTitle>
+                  <MDBIcon className="ms-1 p-2" icon="solar-panel" size="8x" />
                   <MDBCardText>
-                    Committing to sustainability, our solar energy project
-                    harnesses renewable power to reduce our carbon footprint.
-                    Through strategically placed solar panels, we generate clean
-                    electricity, providing an eco-friendly solution and serving
-                    as an educational tool for students interested in
-                    environmental conservation.
+                    Our solar energy project reduces our carbon footprint by
+                    harnessing renewable power through strategically placed
+                    solar panels, providing clean electricity and serving as an
+                    educational tool for environmental conservation.
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
             <MDBCol>
-              <MDBCard>
+              <MDBCard className="feature_card">
                 <MDBCardBody>
                   <MDBCardTitle>Advanced Computer Labs</MDBCardTitle>
+                  <MDBIcon className="ms-1 p-2" icon="desktop" size="8x" />
                   <MDBCardText>
-                    Our computer labs, armed with cutting-edge tech, offer an
-                    ideal space for students to develop digital skills.
-                    High-performance computers and modern software empower
-                    exploration in programming, design, and other computing
-                    disciplines, promoting innovation and keeping pace with tech
-                    advancements.
+                    Our cutting-edge computer labs empower students to develop
+                    digital skills in programming, design, and computing
+                    disciplines. High-performance computers and modern software
+                    foster innovation, keeping pace with tech advancements and
+                    skill develpement.
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
             <MDBCol>
-              <MDBCard>
+              <MDBCard className="feature_card">
                 <MDBCardBody>
                   <MDBCardTitle>Seminar Hall</MDBCardTitle>
+                  <MDBIcon className="ms-1 p-2" icon="home" size="8x" />
                   <MDBCardText>
                     Our spacious seminar hall is a hub for intellectual
-                    exchange. Designed for seminars, workshops, and conferences,
-                    it offers a platform for experts and thought leaders to
+                    exchange, designed for seminars, workshops, and conferences.
+                    It provides a platform for experts and thought leaders to
                     share insights, fostering a culture of intellectual
                     curiosity among students and the broader community.
                   </MDBCardText>
@@ -148,30 +148,31 @@ const Home = () => {
               </MDBCard>
             </MDBCol>
             <MDBCol>
-              <MDBCard>
+              <MDBCard className="feature_card">
                 <MDBCardBody>
                   <MDBCardTitle>School Vans and Buses</MDBCardTitle>
+                  <MDBIcon className="ms-1 p-2" icon="bus-alt" size="8x" />
                   <MDBCardText>
-                    Ensuring safe and reliable transportation, our fleet of
-                    school vans and buses, operated by trained drivers, provides
-                    students with a secure commute. This service not only
-                    facilitates access to education but also gives parents
-                    confidence that their children are in capable hands during
-                    their journeys.
+                    Our school vans and buses, ensure safe and reliable
+                    transportation, providing students with a secure commute.
+                    This service facilitates access to education and gives
+                    parents confidence in their children's safety during
+                    journeys.
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
             <MDBCol>
-              <MDBCard>
+              <MDBCard className="feature_card">
                 <MDBCardBody>
                   <MDBCardTitle>Library</MDBCardTitle>
+                  <MDBIcon className="ms-1 p-2" icon="book-open" size="8x" />
                   <MDBCardText>
                     Our library, a haven for avid readers, houses a diverse
                     collection of books, journals, and digital resources. With
-                    dedicated study areas, it serves as a focal point for
-                    academic excellence, encouraging students to delve into the
-                    joy of reading and expand their intellectual horizons.
+                    dedicated study areas, it encourages academic excellence and
+                    the joy of reading, expanding students' intellectual
+                    horizons.
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
@@ -180,6 +181,7 @@ const Home = () => {
         </MDBContainer>
       </MDBContainer>
 
+      <br />
       <br />
       <br />
 
@@ -193,16 +195,17 @@ const Home = () => {
           </figcaption>
         </figure>
         <p className="fw-bold lead fs-1"></p>
-        <MDBCard style={{ maxWidth: "700px" }}>
+        <MDBCard className="card_principle shadow">
           <MDBRow className="g-0">
-            <MDBCol md="4">
+            <MDBCol md="6">
               <MDBCardImage
-                src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp"
+                className="rounded border"
+                src={require("../static/images/image_home/principle.JPG")}
                 alt="..."
                 fluid
               />
             </MDBCol>
-            <MDBCol md="8">
+            <MDBCol className="card_body_principle" md="6">
               <MDBCardBody>
                 <MDBCardTitle>Priciple Mam Picture</MDBCardTitle>
                 <MDBCardText>
@@ -229,12 +232,12 @@ const Home = () => {
 
       <br />
       <br />
+      <br />
 
       <MDBContainer className="padding-percent fw-bold text-center" fluid>
-        <h2 className="fs-1 fst-italic font-monospace">
-          Percent bar for school performance!
-        </h2>
-        <p className="fs-3 pt-4 font-monospace">Passing Percentage</p>
+        <h2 className="fs-1 fst-italic">Percent bar for school performance!</h2>
+        <p>--------------------------------------------------------------</p>
+        <p className="fs-3 pt-4">Passing Percentage</p>
         <MDBProgress height="20">
           <MDBProgressBar
             className="rounded"
@@ -249,9 +252,7 @@ const Home = () => {
           </MDBProgressBar>
         </MDBProgress>
 
-        <p className="fs-3 pt-4 font-monospace">
-          Critical Thinking and Problem-Solving
-        </p>
+        <p className="fs-3 pt-4">Critical Thinking and Problem-Solving</p>
         <MDBProgress height="20">
           <MDBProgressBar
             className="rounded"
@@ -266,7 +267,7 @@ const Home = () => {
           </MDBProgressBar>
         </MDBProgress>
 
-        <p className="fs-3 pt-4 font-monospace">Parental Involvement</p>
+        <p className="fs-3 pt-4">Parental Involvement</p>
         <MDBProgress height="20">
           <MDBProgressBar
             className="rounded"
@@ -281,9 +282,7 @@ const Home = () => {
           </MDBProgressBar>
         </MDBProgress>
 
-        <p className="fs-3 pt-4 font-monospace">
-          Effort / Improvement & Classroom Behavior
-        </p>
+        <p className="fs-3 pt-4">Effort / Improvement & Classroom Behavior</p>
         <MDBProgress height="20">
           <MDBProgressBar
             className="rounded"
@@ -300,9 +299,11 @@ const Home = () => {
 
       <br />
       <br />
+      <br />
 
       <Testimonials />
 
+      <br />
       <br />
       <br />
       <Footer />

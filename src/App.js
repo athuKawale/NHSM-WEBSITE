@@ -9,6 +9,7 @@ import Academics from "./components/academics";
 import PhotoGallery from "./components/photogallery";
 import Alumini from "./components/alumini";
 import History from "./components/history";
+import Staff from "./components/staff";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
           <Route path="/about" element={<About />} />
 
           <Route path="/history" element={<History />} />
+
+          <Route path="/staff" element={<Staff />} />
 
           <Route path="/academics" element={<Academics />} />
 

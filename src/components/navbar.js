@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../static/css/navbar.css";
 import useWindowSize from "../utils/userWindowSize";
+import { useLocation } from "react-router-dom";
 import {
   MDBContainer,
   MDBNavbar,
@@ -20,6 +21,7 @@ import {
 export default function Navbar() {
   const [openNavCentred, setOpenNavCentred] = useState(false);
   const size = useWindowSize();
+  const location = useLocation();
 
   return (
     <MDBContainer className="bg-nav" fluid>
@@ -51,7 +53,11 @@ export default function Navbar() {
             >
               <MDBNavbarNav fullWidth={false} className="mb-2 mb-lg-0">
                 <MDBNavbarItem className="px-5 mx-1">
-                  <MDBNavbarLink active aria-current="page" href="/">
+                  <MDBNavbarLink
+                    active={location.pathname === "/"}
+                    aria-current="page"
+                    href="/"
+                  >
                     Home
                   </MDBNavbarLink>
                 </MDBNavbarItem>
@@ -67,40 +73,76 @@ export default function Navbar() {
                     </MDBDropdownToggle>
                     <MDBDropdownMenu>
                       <MDBDropdownItem link>
-                        <MDBNavbarLink href="/history">
+                        <MDBNavbarLink
+                          active={location.pathname === "/history"}
+                          href="/history"
+                        >
                           Our History
                         </MDBNavbarLink>
                       </MDBDropdownItem>
                       <MDBDropdownItem link>
-                        <MDBNavbarLink href="/about">About Us</MDBNavbarLink>
+                        <MDBNavbarLink
+                          active={location.pathname === "/about"}
+                          href="/about"
+                        >
+                          About Us
+                        </MDBNavbarLink>
                       </MDBDropdownItem>
                       <MDBDropdownItem link>
-                        <MDBNavbarLink href="/staff">Our Staff</MDBNavbarLink>
+                        <MDBNavbarLink
+                          active={location.pathname === "/staff"}
+                          href="/staff"
+                        >
+                          Our Staff
+                        </MDBNavbarLink>
                       </MDBDropdownItem>
                     </MDBDropdownMenu>
                   </MDBDropdown>
                 </MDBNavbarItem>
 
                 <MDBNavbarItem className="px-5 mx-1">
-                  <MDBNavbarLink href="/academics">Academics</MDBNavbarLink>
+                  <MDBNavbarLink
+                    active={location.pathname === "/academics"}
+                    href="/academics"
+                  >
+                    Academics
+                  </MDBNavbarLink>
                 </MDBNavbarItem>
 
                 <MDBNavbarItem className="px-5 mx-1">
-                  <MDBNavbarLink href="/events">Events</MDBNavbarLink>
+                  <MDBNavbarLink
+                    active={location.pathname === "/events"}
+                    href="/events"
+                  >
+                    Events
+                  </MDBNavbarLink>
                 </MDBNavbarItem>
 
                 <MDBNavbarItem className="px-5 mx-1">
-                  <MDBNavbarLink href="/photogallery">
+                  <MDBNavbarLink
+                    active={location.pathname === "/photogallery"}
+                    href="/photogallery"
+                  >
                     PhotoGallery
                   </MDBNavbarLink>
                 </MDBNavbarItem>
 
                 <MDBNavbarItem className="px-5 mx-1">
-                  <MDBNavbarLink href="/alumini">Alumini</MDBNavbarLink>
+                  <MDBNavbarLink
+                    active={location.pathname === "/alumini"}
+                    href="/alumini"
+                  >
+                    Alumini
+                  </MDBNavbarLink>
                 </MDBNavbarItem>
 
                 <MDBNavbarItem className="ps-5 mx-1">
-                  <MDBNavbarLink href="/contact">Contact Us</MDBNavbarLink>
+                  <MDBNavbarLink
+                    active={location.pathname === "/contact"}
+                    href="/contact"
+                  >
+                    Contact Us
+                  </MDBNavbarLink>
                 </MDBNavbarItem>
               </MDBNavbarNav>
             </MDBCollapse>

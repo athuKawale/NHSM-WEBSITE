@@ -14,10 +14,10 @@ import Staff from "./components/staff";
 function App() {
   return (
     <>
-      <div>
-        <Navbar />
-      </div>
       <Router>
+        <div>
+          <Navbar />
+        </div>
         <Routes>
           <Route exact path="/" element={<Home />} />
 

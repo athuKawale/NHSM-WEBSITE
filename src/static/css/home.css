@@ -88,6 +88,12 @@
     max-height: 110px;
     transition: max-width 0.3s ease;
   }
+
+  .mobile_update {
+    text-align: justify;
+    white-space: normal; /* Allow text to wrap */
+    max-width: none; /* Remove the max-width limit on hover or click */
+  }
   .truncated-text:hover {
     text-align: justify;
     white-space: normal; /* Allow text to wrap */

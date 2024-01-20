@@ -10,36 +10,31 @@ import React from "react";
 
 const Alumini = () => {
   return (
-    <MDBContainer className="py-4">
-      <MDBCard background="dark" className="text-white">
+    <MDBContainer className="py-5">
+      <h3>Note: this page is under development!</h3>
+      <MDBCard background="dark" className="text-white p-2">
         <MDBCardImage
           overlay
-          src="https://mdbootstrap.com/img/new/slides/017.webp"
+          src={require("../static/images/Alumini/IMG-20231125-WA0055.jpg")}
           alt="..."
         />
         <MDBCardOverlay>
-          <MDBCardTitle>Card title</MDBCardTitle>
-          <MDBCardText>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </MDBCardText>
-          <MDBCardText>Last updated 3 mins ago</MDBCardText>
+          <MDBCardTitle>
+            <b>Batch 2017</b>
+          </MDBCardTitle>
         </MDBCardOverlay>
       </MDBCard>
 
-      <MDBCard background="dark" className="text-white mt-4">
+      <MDBCard background="dark" className="text-white p-2 mt-4">
         <MDBCardImage
           overlay
-          src="https://mdbootstrap.com/img/new/slides/017.webp"
+          src={require("../static/images/Alumini/IMG-20231125-WA0011.jpg")}
           alt="..."
         />
         <MDBCardOverlay>
-          <MDBCardTitle>Card title</MDBCardTitle>
-          <MDBCardText>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </MDBCardText>
-          <MDBCardText>Last updated 3 mins ago</MDBCardText>
+          <MDBCardTitle>
+            <b>Batch 1977</b>
+          </MDBCardTitle>
         </MDBCardOverlay>
       </MDBCard>
     </MDBContainer>

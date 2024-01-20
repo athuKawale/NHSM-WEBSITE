@@ -20,9 +20,9 @@ const Contact = () => {
         <p className="fs-1 fw-bold"> Contact Us!</p>
       </MDBContainer>
 
-      <MDBContainer className="py-5">
+      <MDBContainer className="p-5">
         <MDBRow center>
-          <MDBCol size="4">
+          <MDBCol>
             <div className="text-start">
               <p className="fs-3">Address!</p>
               <p className="fs-6">
@@ -51,7 +51,7 @@ const Contact = () => {
               </p>
             </div>
           </MDBCol>
-          <MDBCol size="4">
+          <MDBCol>
             <div>
               <p className="fs-4">Have Any Questions? Let Us Know</p>
               <p className="pb-2">_______________</p>
@@ -92,9 +92,9 @@ const Contact = () => {
                 <MDBInputGroup className="mb-4">
                   <MDBTextArea label="Message*" id="textAreaExample" rows={4} />
                 </MDBInputGroup>
-                <div className="text-center">
+                <div className="text-center py-2">
                   <MDBBtn outline rounded className="mx-auto" color="dark">
-                    Dark
+                    Submit
                   </MDBBtn>
                 </div>
               </form>

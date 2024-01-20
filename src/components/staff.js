@@ -9,6 +9,7 @@ const Staff = () => {
       <MDBContainer className="text-center about-cont" fluid>
         <p className="fs-1 fw-bold"> Our Staff!</p>
       </MDBContainer>
+      <h3>Note: this page is under development!</h3>
       <div className="about-bg">
         <MDBContainer className="py-5 px-4 text-wrap lh-lg about-text">
           <p className="fs-3">

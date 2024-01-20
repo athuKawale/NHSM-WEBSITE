@@ -1,6 +1,6 @@
 import React from "react";
 import "../static/css/home.css";
-import logo from "../static/logo7.png";
+import logo from "../static/Logo.png";
 import {
   MDBCarousel,
   MDBCarouselItem,
@@ -27,20 +27,20 @@ const Home = () => {
   const size = useWindowSize();
   return (
     <div className="custom-cursor">
-      <MDBContainer className="my-3 text-center">
+      <MDBContainer className="my-3 text-center" fluid>
         {size.width > 1000 ? (
           <MDBRow center>
             <MDBCol size="4">
               <MDBRipple rippleTag="a">
                 <img
                   src={logo}
-                  style={{ width: 400, height: "auto" }}
+                  style={{ width: 200, height: "auto" }}
                   className="img-fluid"
                   alt="..."
                 />
               </MDBRipple>
             </MDBCol>
-            <MDBCol size="4">
+            <MDBCol size="4 my-auto">
               <p>
                 Join us as we celebrate a century of excellence in education at
                 New High School Main's 100th-anniversary
@@ -221,15 +221,16 @@ const Home = () => {
               </MDBCol>
               <MDBCol className="card_body_principle" md="6">
                 <MDBCardBody>
-                  <MDBCardTitle>Priciple Mam Picture</MDBCardTitle>
+                  <MDBCardTitle>Miss. Varsha S. Yadav (Jadbansi)</MDBCardTitle>
                   <MDBCardText>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Dear students, your education is the passport to your
+                    future. Embrace challenges, work hard, and believe in
+                    yourselves. You have the power to shape your success. Dream
+                    big and make us proud and happy!
                   </MDBCardText>
                   <MDBCardText>
                     <small className="text-muted">
-                      Last updated 3 mins ago
+                      Administrative Department!
                     </small>
                   </MDBCardText>
                 </MDBCardBody>

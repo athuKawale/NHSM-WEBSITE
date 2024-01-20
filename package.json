@@ -1,6 +1,7 @@
 {
   "name": "mdb-react-template",
   "version": "7.0.0",
+  "homepage": "https://athuKawale.github.io/NHSM-WEBSITE",
   "description": "template for mdb-react-ui-kit",
   "private": true,
   "dependencies": {
@@ -19,6 +20,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

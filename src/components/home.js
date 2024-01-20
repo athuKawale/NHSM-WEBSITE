@@ -59,9 +59,13 @@ const Home = () => {
               className="img-fluid"
               alt="..."
             />
-            <p>
-              Cillum nisi sit dolore aliquip adipisicing tempor qui tempor
-              fugiat <a href="#">Learn More...</a>
+            <p className="pt-1">
+              Join us as we celebrate a century of excellence in education at
+              New High School Main's 100th-anniversary
+              <a href="https://www.canva.com/design/DAF4znLXz68/FjINr3r5GltaB_UMu3Jx9w/view?utm_content=DAF4znLXz68&utm_campaign=designshare&utm_medium=link&utm_source=editor">
+                {" "}
+                Know More...
+              </a>
             </p>
           </>
         )}
@@ -239,7 +243,10 @@ const Home = () => {
           </MDBCard>
         </div>
 
-        <p style={{ textAlign: "justify" }} className="lh-lg py-5 fs-5">
+        <p
+          style={{ textAlign: "justify" }}
+          className="lh-lg py-5 mobile_update"
+        >
           Kailaswasi Dadasaheb Khaparde, with extraordinary vision, established
           the New High School Main on the occasion of its centenary year. It is
           a matter of great pleasure to welcome everyone to this website. Since
@@ -249,16 +256,17 @@ const Home = () => {
           and skilled individuals in the fields of science and medicine.
           Adapting to changing times, the school continuously undertakes new
           initiatives that are essential for the well-being and overall
-          development of the students. The school achieves this by introspecting
-          and implementing changes, ensuring the welfare and holistic
-          development of the students. In the coming centuries, the school will
-          continue its commitment to shaping students who are not only
-          academically proficient but also culturally enriched. The school
-          acknowledges the cooperation and support received from all, and we
-          believe that with your continued collaboration, the school will
-          further prosper. This testimony of trust comes from all the teachers,
-          staff, and members of the governing body. We sincerely request your
-          ongoing cooperation and support in the future endeavors of the school.
+          development of the students. <br />
+          The school achieves this by introspecting and implementing changes,
+          ensuring the welfare and holistic development of the students. In the
+          coming centuries, the school will continue its commitment to shaping
+          students who are not only academically proficient but also culturally
+          enriched. The school acknowledges the cooperation and support received
+          from all, and we believe that with your continued collaboration, the
+          school will further prosper. This testimony of trust comes from all
+          the teachers, staff, and members of the governing body. We sincerely
+          request your ongoing cooperation and support in the future endeavors
+          of the school.
         </p>
       </MDBContainer>
 

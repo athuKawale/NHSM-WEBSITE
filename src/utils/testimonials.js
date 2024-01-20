@@ -3,10 +3,10 @@ import { MDBContainer } from "mdb-react-ui-kit";
 import "../static/css/testimonials.css";
 
 const items = [
-  "Enim non adipisicing cillum qui Lorem tempor proident ex consequat. Eiusmod laboris exercitation consectetur Lorem laborum dolor proident dolor Lorem incididunt ad laborum. Cillum ad ut ex pariatur aliquip deserunt commodo cillum non duis. Reprehenderit ea ea nulla reprehenderit exercitation. Est anim et Lorem in dolore elit quis in exercitation officia ad laborum ipsum reprehenderit. --Parents Name",
-  "Commodo id adipisicing exercitation occaecat. Fugiat nisi qui officia mollit cupidatat occaecat proident eu anim consectetur eiusmod adipisicing. Dolore ea Lorem amet qui enim nulla culpa mollit. Magna do pariatur quis enim tempor aute incididunt fugiat fugiat nisi. --Parents Name",
-  "Consectetur occaecat deserunt laborum adipisicing sunt dolore mollit laborum qui pariatur deserunt occaecat. Aliquip deserunt pariatur fugiat elit veniam sint duis aute voluptate ullamco laboris sit. Aliquip sit ipsum cillum ipsum ullamco commodo anim Lorem in dolore veniam. --Parents Name",
-  "Aute elit cillum voluptate duis exercitation non dolore. Incididunt duis magna nostrud non. Eu Lorem pariatur cillum officia magna laboris eiusmod tempor. Adipisicing anim laboris culpa magna id minim in anim. Nulla elit in elit culpa proident veniam duis ea laborum irure. Eiusmod cillum id proident aute. Sint ea cupidatat id do. --Parents Name",
+  "New High School Mains has been an absolute gem for our family. The teachers are dedicated, and the diverse range of activities keeps our child engaged. Regular updates and conferences make us feel connected, and we're grateful for the supportive community.",
+  "Our experience at New High School Mains has had its ups and downs. While some teachers are fantastic, communication and administrative issues have been frustrating. The school could benefit from improvements in these areas for a more positive experience.",
+  "We've been disappointed with New High School Mains. Lack of communication and limited extracurriculars are major concerns. We feel disconnected from the school community and believe there's room for improvement in fostering a more engaging educational environment.",
+  "New High School Mains has exceeded our expectations. Teachers go above and beyond, and the emphasis on personalized learning is fantastic. The school's commitment to community involvement and academic excellence makes it a top choice for any parent.",
 ];
 
 const Testimonials = () => {

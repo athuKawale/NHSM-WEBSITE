@@ -1,7 +1,7 @@
 {
   "name": "mdb-react-template",
   "version": "7.0.0",
-  "homepage": "https://athuKawale.github.io/NHSM-WEBSITE",
+  "homepage": "https://athuKawale.github.io/NHSM-WEBSITE/#/",
   "description": "template for mdb-react-ui-kit",
   "private": true,
   "dependencies": {

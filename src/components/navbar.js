@@ -56,7 +56,7 @@ export default function Navbar() {
                   <MDBNavbarLink
                     active={location.pathname === "/"}
                     aria-current="page"
-                    href="/"
+                    href="#/"
                   >
                     Home
                   </MDBNavbarLink>
@@ -75,7 +75,7 @@ export default function Navbar() {
                       <MDBDropdownItem link>
                         <MDBNavbarLink
                           active={location.pathname === "/history"}
-                          href="/history"
+                          href="#/history"
                         >
                           Our History
                         </MDBNavbarLink>
@@ -83,7 +83,7 @@ export default function Navbar() {
                       <MDBDropdownItem link>
                         <MDBNavbarLink
                           active={location.pathname === "/about"}
-                          href="/about"
+                          href="#/about"
                         >
                           About Us
                         </MDBNavbarLink>
@@ -91,7 +91,7 @@ export default function Navbar() {
                       <MDBDropdownItem link>
                         <MDBNavbarLink
                           active={location.pathname === "/staff"}
-                          href="/staff"
+                          href="#/staff"
                         >
                           Our Staff
                         </MDBNavbarLink>
@@ -103,7 +103,7 @@ export default function Navbar() {
                 <MDBNavbarItem className="px-5 mx-1">
                   <MDBNavbarLink
                     active={location.pathname === "/academics"}
-                    href="/academics"
+                    href="#/academics"
                   >
                     Academics
                   </MDBNavbarLink>
@@ -112,7 +112,7 @@ export default function Navbar() {
                 <MDBNavbarItem className="px-5 mx-1">
                   <MDBNavbarLink
                     active={location.pathname === "/events"}
-                    href="/events"
+                    href="#/events"
                   >
                     Events
                   </MDBNavbarLink>
@@ -121,7 +121,7 @@ export default function Navbar() {
                 <MDBNavbarItem className="px-5 mx-1">
                   <MDBNavbarLink
                     active={location.pathname === "/photogallery"}
-                    href="/photogallery"
+                    href="#/photogallery"
                   >
                     PhotoGallery
                   </MDBNavbarLink>
@@ -130,7 +130,7 @@ export default function Navbar() {
                 <MDBNavbarItem className="px-5 mx-1">
                   <MDBNavbarLink
                     active={location.pathname === "/alumini"}
-                    href="/alumini"
+                    href="#/alumini"
                   >
                     Alumini
                   </MDBNavbarLink>
@@ -139,7 +139,7 @@ export default function Navbar() {
                 <MDBNavbarItem className="ps-5 mx-1">
                   <MDBNavbarLink
                     active={location.pathname === "/contact"}
-                    href="/contact"
+                    href="#/contact"
                   >
                     Contact Us
                   </MDBNavbarLink>

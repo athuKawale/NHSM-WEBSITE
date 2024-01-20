@@ -52,6 +52,9 @@
 
 .truncated-text {
 }
+.mobile_update {
+  font-size: 18px;
+}
 
 @media only screen and (max-width: 1800px) {
   .padding-percent {
@@ -70,6 +73,21 @@
     transition: max-width 0.3s ease;
   }
 
+  .truncated-text:hover {
+    text-align: justify;
+    white-space: normal; /* Allow text to wrap */
+    max-width: none; /* Remove the max-width limit on hover or click */
+  }
+
+  .mobile_update {
+    white-space: nowrap; /* Prevent text from wrapping onto the next line */
+    font-size: 16px;
+    overflow: hidden; /* Hide any content that overflows the box */
+    text-overflow: ellipsis; /* Display an ellipsis (...) to indicate truncated text */
+    max-width: 400px; /* Set a maximum width for the container */
+    max-height: 110px;
+    transition: max-width 0.3s ease;
+  }
   .truncated-text:hover {
     text-align: justify;
     white-space: normal; /* Allow text to wrap */

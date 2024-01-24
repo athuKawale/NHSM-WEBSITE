@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NHSM-WEBSITE/static/css/main.054d60ee.css",
-    "main.js": "/NHSM-WEBSITE/static/js/main.2b66ef1a.js",
+    "main.js": "/NHSM-WEBSITE/static/js/main.088eb3b8.js",
     "static/js/787.0b7870b6.chunk.js": "/NHSM-WEBSITE/static/js/787.0b7870b6.chunk.js",
     "static/media/IMG_20240107_131019.jpg": "/NHSM-WEBSITE/static/media/IMG_20240107_131019.3abaa565790a5e9725db.jpg",
     "static/media/PAN_9809.JPG": "/NHSM-WEBSITE/static/media/PAN_9809.5498a6b7024ef04d0e4a.JPG",
@@ -33,11 +33,11 @@
     "static/media/cursor.png": "/NHSM-WEBSITE/static/media/cursor.40a46cf3cebc13b7fdee.png",
     "index.html": "/NHSM-WEBSITE/index.html",
     "main.054d60ee.css.map": "/NHSM-WEBSITE/static/css/main.054d60ee.css.map",
-    "main.2b66ef1a.js.map": "/NHSM-WEBSITE/static/js/main.2b66ef1a.js.map",
+    "main.088eb3b8.js.map": "/NHSM-WEBSITE/static/js/main.088eb3b8.js.map",
     "787.0b7870b6.chunk.js.map": "/NHSM-WEBSITE/static/js/787.0b7870b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.054d60ee.css",
-    "static/js/main.2b66ef1a.js"
+    "static/js/main.088eb3b8.js"
   ]
 }

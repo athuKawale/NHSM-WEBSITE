@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/NHSM-WEBSITE/static/css/main.054d60ee.css",
-    "main.js": "/NHSM-WEBSITE/static/js/main.088eb3b8.js",
+    "main.css": "/NHSM-WEBSITE/static/css/main.699ad60d.css",
+    "main.js": "/NHSM-WEBSITE/static/js/main.8e549eed.js",
     "static/js/787.0b7870b6.chunk.js": "/NHSM-WEBSITE/static/js/787.0b7870b6.chunk.js",
     "static/media/IMG_20240107_131019.jpg": "/NHSM-WEBSITE/static/media/IMG_20240107_131019.3abaa565790a5e9725db.jpg",
     "static/media/PAN_9809.JPG": "/NHSM-WEBSITE/static/media/PAN_9809.5498a6b7024ef04d0e4a.JPG",
@@ -28,16 +28,15 @@
     "static/media/about1.jpg": "/NHSM-WEBSITE/static/media/about1.24e3774e6478be60ee42.jpg",
     "static/media/IMG_20240107_131126.jpg": "/NHSM-WEBSITE/static/media/IMG_20240107_131126.dd5d8aff49e94a5f69a9.jpg",
     "static/media/Logo.png": "/NHSM-WEBSITE/static/media/Logo.3b611fee16df22b8b3c1.png",
-    "static/media/IMG-20231125-WA0055.jpg": "/NHSM-WEBSITE/static/media/IMG-20231125-WA0055.59f5c1483ca735633cbe.jpg",
-    "static/media/IMG-20231125-WA0011.jpg": "/NHSM-WEBSITE/static/media/IMG-20231125-WA0011.41761c8116e51d68989b.jpg",
+    "static/media/dk.png": "/NHSM-WEBSITE/static/media/dk.57c8e85aa15b85428346.png",
     "static/media/cursor.png": "/NHSM-WEBSITE/static/media/cursor.40a46cf3cebc13b7fdee.png",
     "index.html": "/NHSM-WEBSITE/index.html",
-    "main.054d60ee.css.map": "/NHSM-WEBSITE/static/css/main.054d60ee.css.map",
-    "main.088eb3b8.js.map": "/NHSM-WEBSITE/static/js/main.088eb3b8.js.map",
+    "main.699ad60d.css.map": "/NHSM-WEBSITE/static/css/main.699ad60d.css.map",
+    "main.8e549eed.js.map": "/NHSM-WEBSITE/static/js/main.8e549eed.js.map",
     "787.0b7870b6.chunk.js.map": "/NHSM-WEBSITE/static/js/787.0b7870b6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.054d60ee.css",
-    "static/js/main.088eb3b8.js"
+    "static/css/main.699ad60d.css",
+    "static/js/main.8e549eed.js"
   ]
 }

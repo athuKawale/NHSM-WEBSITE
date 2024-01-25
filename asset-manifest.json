@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NHSM-WEBSITE/static/css/main.699ad60d.css",
-    "main.js": "/NHSM-WEBSITE/static/js/main.8e549eed.js",
+    "main.js": "/NHSM-WEBSITE/static/js/main.bef740c7.js",
     "static/js/787.0b7870b6.chunk.js": "/NHSM-WEBSITE/static/js/787.0b7870b6.chunk.js",
     "static/media/IMG_20240107_131019.jpg": "/NHSM-WEBSITE/static/media/IMG_20240107_131019.3abaa565790a5e9725db.jpg",
     "static/media/PAN_9809.JPG": "/NHSM-WEBSITE/static/media/PAN_9809.5498a6b7024ef04d0e4a.JPG",
@@ -30,13 +30,38 @@
     "static/media/Logo.png": "/NHSM-WEBSITE/static/media/Logo.3b611fee16df22b8b3c1.png",
     "static/media/dk.png": "/NHSM-WEBSITE/static/media/dk.57c8e85aa15b85428346.png",
     "static/media/cursor.png": "/NHSM-WEBSITE/static/media/cursor.40a46cf3cebc13b7fdee.png",
+    "static/media/Panat sir.JPG": "/NHSM-WEBSITE/static/media/Panat sir.92a783c7c9f4d87b54d2.JPG",
+    "static/media/jadbansi madam.JPG": "/NHSM-WEBSITE/static/media/jadbansi madam.33817053a260529d739e.JPG",
+    "static/media/Jaiswal sir.JPG": "/NHSM-WEBSITE/static/media/Jaiswal sir.6137666d0609c9cc1a83.JPG",
+    "static/media/Maldhure mnadamn.JPG": "/NHSM-WEBSITE/static/media/Maldhure mnadamn.58191584fececa64e180.JPG",
+    "static/media/BaporikarSir.JPG": "/NHSM-WEBSITE/static/media/BaporikarSir.81127c3f8dae21bd1128.JPG",
+    "static/media/Ninghot Madam.JPG": "/NHSM-WEBSITE/static/media/Ninghot Madam.b8c013b921ccfb85557f.JPG",
+    "static/media/Tayade bhau.JPG": "/NHSM-WEBSITE/static/media/Tayade bhau.07e5fc26ce6cb18d7a35.JPG",
+    "static/media/Daterao sir.JPG": "/NHSM-WEBSITE/static/media/Daterao sir.9bf748e22e4a14c6ea56.JPG",
+    "static/media/Rakhonde Madam.JPG": "/NHSM-WEBSITE/static/media/Rakhonde Madam.052796fbf15df30f5280.JPG",
+    "static/media/Rathod sir.JPG": "/NHSM-WEBSITE/static/media/Rathod sir.446ea3fcaa9b5476fa19.JPG",
+    "static/media/Raut Madam.JPG": "/NHSM-WEBSITE/static/media/Raut Madam.b5652087730f663293c2.JPG",
+    "static/media/Giri Sir.JPG": "/NHSM-WEBSITE/static/media/Giri Sir.49c73fb67c2f65a24e7a.JPG",
+    "static/media/Deshpande mdam.JPG": "/NHSM-WEBSITE/static/media/Deshpande mdam.5dfe01368d015ccb5521.JPG",
+    "static/media/Malve sir.JPG": "/NHSM-WEBSITE/static/media/Malve sir.2272a40a3a098b04e3ae.JPG",
+    "static/media/Bijagiri sir.JPG": "/NHSM-WEBSITE/static/media/Bijagiri sir.c398702e80a3c68d2172.JPG",
+    "static/media/Mahajan.JPG": "/NHSM-WEBSITE/static/media/Mahajan.dee2acbc506e94cb98d5.JPG",
+    "static/media/Bhongade.JPG": "/NHSM-WEBSITE/static/media/Bhongade.805f2f2388d93610edd4.JPG",
+    "static/media/waybhase sir.JPG": "/NHSM-WEBSITE/static/media/waybhase sir.5134086e244e85edf4a7.JPG",
+    "static/media/Pukale sir.JPG": "/NHSM-WEBSITE/static/media/Pukale sir.ccb7959c11ea5e5e237d.JPG",
+    "static/media/Soman Sir.JPG": "/NHSM-WEBSITE/static/media/Soman Sir.10212e7ba72818dd5297.JPG",
+    "static/media/Shroti madam.JPG": "/NHSM-WEBSITE/static/media/Shroti madam.398e62756c9a862c05f6.JPG",
+    "static/media/Burange Babu.JPG": "/NHSM-WEBSITE/static/media/Burange Babu.4ab046ce9df3e80b5557.JPG",
+    "static/media/Thakare sir.JPG": "/NHSM-WEBSITE/static/media/Thakare sir.990b6cb143ed94ef595e.JPG",
+    "static/media/Raut sir.JPG": "/NHSM-WEBSITE/static/media/Raut sir.29a5077bb97f0b5b1e0a.JPG",
+    "static/media/Singalwar madam.JPG": "/NHSM-WEBSITE/static/media/Singalwar madam.08a6fdd689c3cff053e7.JPG",
     "index.html": "/NHSM-WEBSITE/index.html",
     "main.699ad60d.css.map": "/NHSM-WEBSITE/static/css/main.699ad60d.css.map",
-    "main.8e549eed.js.map": "/NHSM-WEBSITE/static/js/main.8e549eed.js.map",
+    "main.bef740c7.js.map": "/NHSM-WEBSITE/static/js/main.bef740c7.js.map",
     "787.0b7870b6.chunk.js.map": "/NHSM-WEBSITE/static/js/787.0b7870b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.699ad60d.css",
-    "static/js/main.8e549eed.js"
+    "static/js/main.bef740c7.js"
   ]
 }

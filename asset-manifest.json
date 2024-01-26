@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/NHSM-WEBSITE/static/css/main.699ad60d.css",
-    "main.js": "/NHSM-WEBSITE/static/js/main.bef740c7.js",
+    "main.css": "/NHSM-WEBSITE/static/css/main.c000717a.css",
+    "main.js": "/NHSM-WEBSITE/static/js/main.2832594f.js",
     "static/js/787.0b7870b6.chunk.js": "/NHSM-WEBSITE/static/js/787.0b7870b6.chunk.js",
     "static/media/IMG_20240107_131019.jpg": "/NHSM-WEBSITE/static/media/IMG_20240107_131019.3abaa565790a5e9725db.jpg",
     "static/media/PAN_9809.JPG": "/NHSM-WEBSITE/static/media/PAN_9809.5498a6b7024ef04d0e4a.JPG",
@@ -56,12 +56,12 @@
     "static/media/Raut sir.JPG": "/NHSM-WEBSITE/static/media/Raut sir.29a5077bb97f0b5b1e0a.JPG",
     "static/media/Singalwar madam.JPG": "/NHSM-WEBSITE/static/media/Singalwar madam.08a6fdd689c3cff053e7.JPG",
     "index.html": "/NHSM-WEBSITE/index.html",
-    "main.699ad60d.css.map": "/NHSM-WEBSITE/static/css/main.699ad60d.css.map",
-    "main.bef740c7.js.map": "/NHSM-WEBSITE/static/js/main.bef740c7.js.map",
+    "main.c000717a.css.map": "/NHSM-WEBSITE/static/css/main.c000717a.css.map",
+    "main.2832594f.js.map": "/NHSM-WEBSITE/static/js/main.2832594f.js.map",
     "787.0b7870b6.chunk.js.map": "/NHSM-WEBSITE/static/js/787.0b7870b6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.699ad60d.css",
-    "static/js/main.bef740c7.js"
+    "static/css/main.c000717a.css",
+    "static/js/main.2832594f.js"
   ]
 }

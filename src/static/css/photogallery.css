@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1200px) {
+  .photogallerypadding {
+    margin-bottom: 600px;
+  }
+}
+
+@media only screen and (max-width: 373px) {
+  .photogallerypadding {
+    margin-bottom: 3000px;
+  }
+}

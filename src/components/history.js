@@ -15,7 +15,7 @@ const History = () => {
             Picture this: 1924, a world in transition, and Daadasaheb Khaparde
             lays the cornerstone of our iconic institution. Fast forward to
             today, and you're standing at the threshold of a living, breathing
-            history - New High School Mains, Amaravati.
+            history - New High School Main, Amaravati.
           </p>
           <p className="fs-4">
             🚀 Our story is not a mere timeline; it's a gripping narrative woven

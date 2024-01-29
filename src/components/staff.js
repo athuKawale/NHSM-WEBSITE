@@ -1,38 +1,290 @@
-import { MDBContainer } from "mdb-react-ui-kit";
+import {
+  MDBContainer,
+  MDBCard,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardBody,
+  MDBCardImage,
+  MDBRow,
+  MDBCol,
+  MDBTabs,
+  MDBTabsItem,
+  MDBTabsLink,
+  MDBTabsContent,
+  MDBTabsPane,
+} from "mdb-react-ui-kit";
 import React from "react";
 import "../static/css/about.css";
 import Footer from "./footer";
+import { useState } from "react";
+import yourPhotos from "../static/json/staffimages.json";
+
+const PhotoGallery = ({ yourPhotos }) => {
+  const [basicActive, setBasicActive] = useState("tab1");
+
+  const handleBasicClick = (value) => {
+    if (value === basicActive) {
+      return;
+    }
+
+    setBasicActive(value);
+  };
+
+  const adminData = yourPhotos.filter((item) => item.department === "admin");
+  const teacherData = yourPhotos.filter(
+    (item) => item.department === "teacher"
+  );
+  const ntData = yourPhotos.filter((item) => item.department === "nt");
+  const manageData = yourPhotos.filter(
+    (item) => item.department === "management"
+  );
+
+  return (
+    <div>
+      <MDBTabs className="mb-3">
+        <MDBTabsItem>
+          <MDBTabsLink
+            onClick={() => handleBasicClick("tab4")}
+            active={basicActive === "tab4"}
+          >
+            Management
+          </MDBTabsLink>
+        </MDBTabsItem>
+        <MDBTabsItem>
+          <MDBTabsLink
+            onClick={() => handleBasicClick("tab1")}
+            active={basicActive === "tab1"}
+          >
+            Administrative Department
+          </MDBTabsLink>
+        </MDBTabsItem>
+        <MDBTabsItem>
+          <MDBTabsLink
+            onClick={() => handleBasicClick("tab2")}
+            active={basicActive === "tab2"}
+          >
+            Teachers Department
+          </MDBTabsLink>
+        </MDBTabsItem>
+        <MDBTabsItem>
+          <MDBTabsLink
+            onClick={() => handleBasicClick("tab3")}
+            active={basicActive === "tab3"}
+          >
+            Non Teaching Staff
+          </MDBTabsLink>
+        </MDBTabsItem>
+      </MDBTabs>
+
+      {manageData &&
+        manageData.map((record) => {
+          console.log(record.src);
+          return (
+            <div>
+              <MDBTabsContent>
+                <MDBTabsPane open={basicActive === "tab4"}>
+                  <MDBContainer className="py-3 pb-4 d-flex justify-content-center text-center lora-font">
+                    <MDBCard
+                      className="p-3 border border-secondary"
+                      style={{ maxWidth: "550px" }}
+                    >
+                      <MDBRow className="g-0">
+                        <MDBCol lg="4">
+                          <MDBCardImage
+                            className="img-fluid rounded"
+                            src={require(`../static/staff/${record.src}`)}
+                            alt="..."
+                            width={200}
+                            height={200}
+                            fluid
+                          />
+                        </MDBCol>
+                        <MDBCol lg="8">
+                          <MDBCardBody>
+                            <MDBCardText className="fs-4">
+                              <b className="text-muted">
+                                Designition: {record.subject}
+                              </b>
+                            </MDBCardText>
+                            <MDBCardTitle className="fs-4">
+                              <b>Name: {record.name}</b>
+                            </MDBCardTitle>
+                          </MDBCardBody>
+                        </MDBCol>
+                      </MDBRow>
+                    </MDBCard>
+                  </MDBContainer>
+                </MDBTabsPane>
+              </MDBTabsContent>
+            </div>
+          );
+        })}
+
+      {adminData &&
+        adminData.map((record) => {
+          console.log(record.src);
+          return (
+            <div>
+              <MDBTabsContent>
+                <MDBTabsPane open={basicActive === "tab1"}>
+                  <MDBContainer className="py-3 pb-4 d-flex justify-content-center text-center lora-font">
+                    <MDBCard
+                      className="p-3 border border-secondary"
+                      style={{ maxWidth: "550px" }}
+                    >
+                      <MDBRow className="g-0">
+                        <MDBCol lg="4">
+                          <MDBCardImage
+                            className="img-fluid rounded"
+                            src={require(`../static/staff/${record.src}`)}
+                            alt="..."
+                            width={200}
+                            height={200}
+                            fluid
+                          />
+                        </MDBCol>
+                        <MDBCol lg="8">
+                          <MDBCardBody>
+                            <MDBCardTitle>Name: {record.name}</MDBCardTitle>
+                            <MDBCardText>
+                              Qualification: {record.qualification}
+                            </MDBCardText>
+                            <MDBCardText>
+                              <small className="text-muted">
+                                DESIGNITION: {record.subject}
+                              </small>
+                            </MDBCardText>
+
+                            <MDBCardText>
+                              <small className="text-muted">
+                                Year of Experience:
+                                {record.experience}
+                              </small>
+                            </MDBCardText>
+                          </MDBCardBody>
+                        </MDBCol>
+                      </MDBRow>
+                    </MDBCard>
+                  </MDBContainer>
+                </MDBTabsPane>
+              </MDBTabsContent>
+            </div>
+          );
+        })}
+
+      {teacherData &&
+        teacherData.map((record) => {
+          console.log(record.src);
+          return (
+            <div>
+              <MDBTabsContent>
+                <MDBTabsPane open={basicActive === "tab2"}>
+                  <MDBContainer className="py-3 pb-4 d-flex justify-content-center text-center lora-font">
+                    <MDBCard
+                      className="p-3 border border-secondary"
+                      style={{ maxWidth: "550px" }}
+                    >
+                      <MDBRow className="g-0">
+                        <MDBCol lg="4">
+                          <MDBCardImage
+                            className="img-fluid rounded"
+                            src={require(`../static/staff/${record.src}`)}
+                            alt="..."
+                            width={200}
+                            height={200}
+                            fluid
+                          />
+                        </MDBCol>
+                        <MDBCol lg="8">
+                          <MDBCardBody>
+                            <MDBCardTitle>Name: {record.name}</MDBCardTitle>
+                            <MDBCardText>
+                              Qualification: {record.qualification}
+                            </MDBCardText>
+                            <MDBCardText>
+                              <small className="text-muted">
+                                Subject: {record.subject}
+                              </small>
+                            </MDBCardText>
+
+                            <MDBCardText>
+                              <small className="text-muted">
+                                Year of Experience:
+                                {record.experience}
+                              </small>
+                            </MDBCardText>
+                          </MDBCardBody>
+                        </MDBCol>
+                      </MDBRow>
+                    </MDBCard>
+                  </MDBContainer>
+                </MDBTabsPane>
+              </MDBTabsContent>
+            </div>
+          );
+        })}
+
+      {ntData &&
+        ntData.map((record) => {
+          console.log(record.src);
+          return (
+            <div>
+              <MDBTabsContent>
+                <MDBTabsPane open={basicActive === "tab3"}>
+                  <MDBContainer className="py-3 pb-4 d-flex justify-content-center text-center lora-font">
+                    <MDBCard
+                      className="p-3 border border-secondary"
+                      style={{ maxWidth: "550px" }}
+                    >
+                      <MDBRow className="g-0">
+                        <MDBCol lg="4">
+                          <MDBCardImage
+                            className="img-fluid rounded"
+                            src={require(`../static/staff/${record.src}`)}
+                            alt="..."
+                            width={200}
+                            height={200}
+                            fluid
+                          />
+                        </MDBCol>
+                        <MDBCol lg="8">
+                          <MDBCardBody>
+                            <MDBCardTitle>Name: {record.name}</MDBCardTitle>
+                            <MDBCardText>
+                              Qualification: {record.qualification}
+                            </MDBCardText>
+                            <MDBCardText>
+                              <small className="text-muted">
+                                Subject: {record.subject}
+                              </small>
+                            </MDBCardText>
+
+                            <MDBCardText>
+                              <small className="text-muted">
+                                Year of Experience:
+                                {record.experience}
+                              </small>
+                            </MDBCardText>
+                          </MDBCardBody>
+                        </MDBCol>
+                      </MDBRow>
+                    </MDBCard>
+                  </MDBContainer>
+                </MDBTabsPane>
+              </MDBTabsContent>
+            </div>
+          );
+        })}
+    </div>
+  );
+};
 
 const Staff = () => {
   return (
     <>
-      <MDBContainer className="text-center about-cont" fluid>
-        <p className="fs-1 fw-bold"> Our Staff!</p>
-      </MDBContainer>
-      <h3>Note: this page is under development!</h3>
-      <div className="about-bg">
-        <MDBContainer className="py-5 px-4 text-wrap lh-lg about-text">
-          <p className="fs-3">
-            Lorem qui nulla dolore ad officia laborum cillum ullamco culpa
-            excepteur voluptate cillum excepteur. Nostrud sint nostrud ut
-            pariatur ad anim laborum dolore veniam sint. Fugiat sunt dolor
-            aliquip sunt nostrud ullamco cupidatat ullamco cillum minim magna eu
-            exercitation. Minim enim duis duis consectetur do eu dolor amet
-            occaecat velit minim duis sunt officia. Nisi quis amet velit eiusmod
-            id occaecat dolor ex et amet id anim amet.
-          </p>
-          <p className="fs-3">
-            Non ea exercitation veniam laborum nisi excepteur anim anim
-            incididunt dolor tempor deserunt tempor voluptate. Tempor sunt
-            cillum aliquip ea qui excepteur ullamco velit consequat esse
-            voluptate dolor. Tempor id exercitation reprehenderit enim et cillum
-            dolore aliquip culpa sit velit. Ullamco cillum officia dolor sunt
-            Lorem aliquip adipisicing aliqua quis. Tempor laborum laboris elit
-            occaecat deserunt.
-          </p>
-        </MDBContainer>
-      </div>
-
+      <PhotoGallery yourPhotos={yourPhotos} />
+      <br />
+      <br />
       <Footer />
     </>
   );

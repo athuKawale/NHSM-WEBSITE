@@ -1,0 +1,323 @@
+[
+  {
+    "src": "BaporikarSir.JPG",
+    "name": "Upendra N. Baporikar",
+    "department": "teacher",
+    "qualification": "D.E.E",
+    "subject": "Electrical Technology",
+    "experience": "31 years"
+  },
+  {
+    "src": "Thakare sir.JPG",
+    "name": "Gajanan B. Thakre",
+    "department": "teacher",
+    "qualification": "M.A. B.Ed",
+    "subject": "Hindi, Marathi",
+    "experience": "20 years"
+  },
+  {
+    "src": "Giri Sir.JPG",
+    "name": "Sandeshkumar s. Giri",
+    "department": "teacher",
+    "qualification": "B.A. B.P.Ed M.P.Ed M.Phil",
+    "subject": "Phy. Edu, Hindi, Geography ",
+    "experience": "24 years"
+  },
+  {
+    "src": "Singalwar madam.JPG",
+    "name": "Varsha S. Singalwar",
+    "department": "teacher",
+    "qualification": "M.A. B.Ed",
+    "subject": "English, Marathi, History, Geography",
+    "experience": "33 years"
+  },
+  {
+    "src": "SPathak.jpg",
+    "name": "Sunil Pathak",
+    "department": "teacher",
+    "qualification": "M.Sc M.C.A.",
+    "subject": "Electronics",
+    "experience": "31 years"
+  },
+  {
+    "src": "Panat sir.JPG",
+    "name": "Shyam S. Panat",
+    "department": "teacher",
+    "qualification": "M.Com",
+    "subject": "Accounting & Ofice Management",
+    "experience": "31 years"
+  },
+  {
+    "src": "Mahajan.JPG",
+    "name": "Surendra S. Mahajan",
+    "department": "nt",
+    "qualification": "10th pass",
+    "subject": "NA",
+    "experience": "NA"
+  },
+  {
+    "src": "waybhase sir.JPG",
+    "name": "Ganesh S. Waybhase",
+    "department": "teacher",
+    "qualification": "M.A(English) M.Ed (NET,SET Qualified)",
+    "subject": "English, History",
+    "experience": "10 years"
+  },
+  {
+    "src": "Jaiswal sir.JPG",
+    "name": "Pankaj A. Jaiswal",
+    "department": "teacher",
+    "qualification": "M.Sc.(Maths) B.Ed",
+    "subject": "Maths, Science, NCC",
+    "experience": "15 years"
+  },
+  {
+    "src": "Burange Babu.JPG",
+    "name": "Surendra R. Burange",
+    "department": "nt",
+    "qualification": "M.A.",
+    "subject": "NA",
+    "experience": "NA"
+  },
+  {
+    "src": "jadbansi madam.JPG",
+    "name": "Ku. Varsha B. Jadbansi",
+    "department": "admin",
+    "qualification": "B.A. B.Ed.",
+    "subject": "Head Mistress/Principal",
+    "experience": "27 years"
+  },
+  {
+    "src": "Ninghot Madam.JPG",
+    "name": "Sandhya P. Ninghot",
+    "department": "teacher",
+    "qualification": "B.A. B.Ed",
+    "subject": "English, Maths, Marathi",
+    "experience": "37 years"
+  },
+  {
+    "src": "Maldhure mnadamn.JPG",
+    "name": "Snehal A. Maldhure",
+    "department": "teacher",
+    "qualification": "M.Sc. (Zoology/Chemistry) B.Ed B.A(Eng lit.)",
+    "subject": "Biology, Chemistry",
+    "experience": "9 years"
+  },
+  {
+    "src": "Pukale sir.JPG",
+    "name": "Vilas W. Phukale",
+    "department": "teacher",
+    "qualification": "D.Ed",
+    "subject": "Maths, Marathi, History, Hindi",
+    "experience": "30 years"
+  },
+  {
+    "src": "Soman Sir.JPG",
+    "name": "Ninad W. Soman",
+    "department": "teacher",
+    "qualification": "M.Com M.Phill",
+    "subject": "Accounting & Ofice Management",
+    "experience": "31 years"
+  },
+  {
+    "src": "Malve sir.JPG",
+    "name": "Amit U. Malve",
+    "department": "teacher",
+    "qualification": "M.Sc (Maths) B.ed",
+    "subject": "Mathematics",
+    "experience": "9 years"
+  },
+  {
+    "src": "Daterao sir.JPG",
+    "name": "Shyam P. Daterao",
+    "department": "teacher",
+    "qualification": "M.Sc.(Maths) B.Ed",
+    "subject": "Maths, Science",
+    "experience": "10 years"
+  },
+  {
+    "src": "Bhongade.JPG",
+    "name": "Baban K. Bhongade",
+    "department": "nt",
+    "qualification": "10th Pass, ITI",
+    "subject": "NA",
+    "experience": "NA"
+  },
+  {
+    "src": "Tayade bhau.JPG",
+    "name": "Gajanan S. Tayde",
+    "department": "nt",
+    "qualification": "B.A.",
+    "subject": "NA",
+    "experience": "NA"
+  },
+  {
+    "src": "Deshpande mdam.JPG",
+    "name": "Sanjivani A. Deshpande",
+    "department": "teacher",
+    "qualification": "A.T.D. A.M. GDART",
+    "subject": "Art, Marathi, Sanskrit",
+    "experience": "20 years"
+  },
+  {
+    "src": "Rathod sir.JPG",
+    "name": "Sheshrao D. Rathod",
+    "department": "teacher",
+    "qualification": "M.Sc(Biology) B.Ed",
+    "subject": "Science",
+    "experience": "10 years"
+  },
+  {
+    "src": "Raut Madam.JPG",
+    "name": "Meena P. Raut",
+    "department": "teacher",
+    "qualification": "B.A. B.Ed",
+    "subject": "Marathi, Geography",
+    "experience": "14 years"
+  },
+  {
+    "src": "Bijagiri sir.JPG",
+    "name": "Atul D. Bijagare",
+    "department": "teacher",
+    "qualification": "M.Sc. (Chemistry) B.ed",
+    "subject": "Chemistry",
+    "experience": "9 Years"
+  },
+  {
+    "src": "Shroti madam.JPG",
+    "name": "Kalpana P. Shroti",
+    "department": "F.T.T. (Practical)",
+    "qualification": "Electronics and Communication",
+    "subject": "Electrical Technology",
+    "experience": "31 years"
+  },
+  {
+    "src": "Rakhonde Madam.JPG",
+    "name": "Surekha Dinesh Rakhonde",
+    "department": "teacher",
+    "qualification": "B.A. B.Ed.",
+    "subject": "English, History",
+    "experience": "23 years"
+  },
+  {
+    "src": "1.jpg",
+    "name": "Dr. Sau. M.V. Shiralkar",
+    "department": "management",
+    "qualification": "",
+    "subject": "President",
+    "experience": ""
+  },
+  {
+    "src": "2.jpg",
+    "name": "Dr. S.D. Kasbekar",
+    "department": "management",
+    "qualification": "",
+    "subject": "Senior Vice President",
+    "experience": ""
+  },
+  {
+    "src": "3.jpg",
+    "name": "Pandit K.V. Navsalkar",
+    "department": "management",
+    "qualification": "",
+    "subject": "Vice President",
+    "experience": ""
+  },
+  {
+    "src": "4.jpg",
+    "name": "Shri. V.D. Joshi",
+    "department": "management",
+    "qualification": "",
+    "subject": "Vice President",
+    "experience": ""
+  },
+  {
+    "src": "5.jpg",
+    "name": "Shri. N.W. Soman",
+    "department": "management",
+    "qualification": "",
+    "subject": "Secretary",
+    "experience": ""
+  },
+  {
+    "src": "6.jpg",
+    "name": "Shri. P.S. Patrikar",
+    "department": "management",
+    "qualification": "",
+    "subject": "Joint Secretary",
+    "experience": ""
+  },
+  {
+    "src": "7.jpg",
+    "name": "Sau. M.P. Pande",
+    "department": "management",
+    "qualification": "",
+    "subject": "Joint Secretary",
+    "experience": ""
+  },
+  {
+    "src": "8.jpg",
+    "name": "Shri. R.G. Khandekar",
+    "department": "management",
+    "qualification": "",
+    "subject": "Mandal Rrepresentative",
+    "experience": ""
+  },
+  {
+    "src": "9.jpeg",
+    "name": "Shri. S.R. Godbole",
+    "department": "management",
+    "qualification": "",
+    "subject": "Mandal Rrepresentative",
+    "experience": ""
+  },
+  {
+    "src": "10.jpg",
+    "name": "Dr. A.B. Mohril",
+    "department": "management",
+    "qualification": "",
+    "subject": "Institute Head",
+    "experience": ""
+  },
+  {
+    "src": "11.jpeg",
+    "name": "Sau. V.C. Thipse",
+    "department": "management",
+    "qualification": "",
+    "subject": "Institute Head",
+    "experience": ""
+  },
+  {
+    "src": "12.jpg",
+    "name": "Shri. A.M. Nimbole",
+    "department": "management",
+    "qualification": "",
+    "subject": "Institute Head",
+    "experience": ""
+  },
+
+  {
+    "src": "jadbansi madam.JPG",
+    "name": "Ku. V.B. Jadbansi",
+    "department": "management",
+    "qualification": "",
+    "subject": "Institute Head",
+    "experience": ""
+  },
+  {
+    "src": "14.jpg",
+    "name": "Shri. S.S. Giri",
+    "department": "management",
+    "qualification": "",
+    "subject": "Teacher Representative",
+    "experience": ""
+  },
+  {
+    "src": "15.jpeg",
+    "name": "Sau. M.P. Walse",
+    "department": "management",
+    "qualification": "",
+    "subject": "Teacher Representative",
+    "experience": ""
+  }
+]

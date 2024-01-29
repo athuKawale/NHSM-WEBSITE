@@ -10,10 +10,10 @@ const About = () => {
         <p className="fs-1 fw-bold"> About Us!</p>
       </MDBContainer>
       <div className="about-bg">
-        <MDBContainer className="py-5 mb  -5 px-4 text-wrap lh-lg about-text">
+        <MDBContainer className="py-5 mb-5 px-4 text-wrap lh-lg about-text">
           <p className="fs-4">
             🚀 Dive into the heart of a century-long saga at New High School
-            Mains, Amaravati! Our journey, ignited in 1924 by the visionary
+            Main, Amaravati! Our journey, ignited in 1924 by the visionary
             Daadasaheb Khaparde, has been nothing short of a thrilling
             adventure. We're not just a school; we are a living, breathing
             narrative of passion, patriotism, and academic brilliance!
@@ -33,7 +33,7 @@ const About = () => {
             dreams and achievements.
           </p>
           <p className="fs-4">
-            🎉 Join us in celebrating a century of New High School Mains! We're
+            🎉 Join us in celebrating a century of New High School Main! We're
             not just marking a milestone; we're embracing the future. Step into
             our vibrant community, where every student, teacher, and alumni
             contribute to the tapestry of our rich legacy. Let's create history

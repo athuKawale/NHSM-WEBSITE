@@ -1,6 +1,8 @@
 import React from "react";
 import "../static/css/home.css";
 import logo from "../static/Logo.png";
+import dk from "../static/dk.png";
+import { useState } from "react";
 import {
   MDBCarousel,
   MDBCarouselItem,
@@ -22,8 +24,14 @@ import {
 import useWindowSize from "../utils/userWindowSize";
 import Footer from "./footer";
 import Testimonials from "../utils/testimonials";
+import HiddenTextComponent from "../utils/hidetextcomponent";
 
 const Home = () => {
+  const [isTextVisible, setIsTextVisible] = useState(false);
+
+  const toggleText = () => {
+    setIsTextVisible(!isTextVisible);
+  };
   const size = useWindowSize();
   return (
     <div className="custom-cursor">
@@ -40,15 +48,27 @@ const Home = () => {
                 />
               </MDBRipple>
             </MDBCol>
-            <MDBCol size="4 my-auto">
-              <p>
+            <MDBCol size="4">
+              <p className="fs-1 lora-font">New High School Main</p>
+              <p className="fs-6 lora-font">Jog Chowk, Amravati, 444601</p>
+              <p className="lora-font">
                 Join us as we celebrate a century of excellence in education at
-                New High School Main's 100th-anniversary
+                New High School Main 100th-anniversary
                 <a href="https://www.canva.com/design/DAF4znLXz68/FjINr3r5GltaB_UMu3Jx9w/view?utm_content=DAF4znLXz68&utm_campaign=designshare&utm_medium=link&utm_source=editor">
                   {" "}
                   Know More...
                 </a>
               </p>
+            </MDBCol>
+            <MDBCol size="4 my-auto">
+              <MDBRipple rippleTag="a">
+                <img
+                  src={dk}
+                  style={{ width: 200, height: "auto" }}
+                  className="img-fluid"
+                  alt="..."
+                />
+              </MDBRipple>
             </MDBCol>
           </MDBRow>
         ) : (
@@ -75,7 +95,7 @@ const Home = () => {
           <MDBCarouselItem itemId={1} interval={3000}>
             <MDBRipple rippleTag="a">
               <img
-                src={require("../static/images/image_home/carousel1.JPG")}
+                src={require("../static/images/image_home/carousel24.jpg")}
                 className="d-block w-100"
                 alt="..."
               />
@@ -84,7 +104,7 @@ const Home = () => {
           <MDBCarouselItem itemId={2} interval={3000}>
             <MDBRipple rippleTag="a">
               <img
-                src={require("../static/images/image_home/carousel.JPG")}
+                src={require("../static/images/image_home/carousel22.png")}
                 className="d-block w-100"
                 alt="..."
               />
@@ -99,6 +119,15 @@ const Home = () => {
               />
             </MDBRipple>
           </MDBCarouselItem>
+          <MDBCarouselItem itemId={4} interval={1700}>
+            <MDBRipple rippleTag="a">
+              <img
+                src={require("../static/images/image_home/carousel23.jpg")}
+                className="d-block w-100"
+                alt="..."
+              />
+            </MDBRipple>
+          </MDBCarouselItem>
         </MDBCarousel>
       </MDBContainer>
 
@@ -107,93 +136,57 @@ const Home = () => {
       <MDBContainer className="get-features p-5" fluid>
         <MDBContainer>
           <MDBRow className="row-cols-1 row-cols-md-2 g-3 text-center">
-            <MDBCol>
-              <MDBCard className="feature_card">
-                <MDBCardBody>
-                  <MDBCardTitle>Interactive Board</MDBCardTitle>
-                  <MDBIcon className="ms-1 p-2" icon="chalkboard" size="8x" />
-                  <MDBCardText className="truncated-text">
-                    Our interactive boards transform classrooms into dynamic
-                    learning spaces, fostering engagement with touch-sensitive
-                    technology and interactive software for immersive lessons.
-                  </MDBCardText>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
-            <MDBCol>
-              <MDBCard className="feature_card">
-                <MDBCardBody>
-                  <MDBCardTitle>Solar Energy Project</MDBCardTitle>
-                  <MDBIcon className="ms-1 p-2" icon="solar-panel" size="8x" />
-                  <MDBCardText className="truncated-text">
-                    Our solar energy project reduces our carbon footprint by
+            <HiddenTextComponent
+              title="Interactive Board"
+              initialText="Our interactive boards transform classrooms into dynamic
+                      learning spaces, fostering engagement with touch-sensitive
+                      technology and interactive software for immersive lessons."
+              icon="chalkboard"
+            />
+            <HiddenTextComponent
+              title="Solar Energy Project"
+              initialText="Our solar energy project reduces our carbon footprint by
                     harnessing renewable power through strategically placed
                     solar panels, providing clean electricity and serving as an
-                    educational tool for environmental conservation.
-                  </MDBCardText>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
-            <MDBCol>
-              <MDBCard className="feature_card">
-                <MDBCardBody>
-                  <MDBCardTitle>Advanced Computer Labs</MDBCardTitle>
-                  <MDBIcon className="ms-1 p-2" icon="desktop" size="8x" />
-                  <MDBCardText className="truncated-text">
-                    Our cutting-edge computer labs empower students to develop
+                    educational tool for environmental conservation."
+              icon="solar-panel"
+            />
+            <HiddenTextComponent
+              title="Computer Lab"
+              initialText=" Our cutting-edge computer labs empower students to develop
                     digital skills in programming, design, and computing
                     disciplines. High-performance computers and modern software
                     foster innovation, keeping pace with tech advancements and
-                    skill develpement.
-                  </MDBCardText>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
-            <MDBCol>
-              <MDBCard className="feature_card">
-                <MDBCardBody>
-                  <MDBCardTitle>Seminar Hall</MDBCardTitle>
-                  <MDBIcon className="ms-1 p-2" icon="home" size="8x" />
-                  <MDBCardText className="truncated-text">
-                    Our spacious seminar hall is a hub for intellectual
+                    skill develpement."
+              icon="desktop"
+            />
+            <HiddenTextComponent
+              title="Seminar Hall"
+              initialText="Our spacious seminar hall is a hub for intellectual
                     exchange, designed for seminars, workshops, and conferences.
                     It provides a platform for experts and thought leaders to
                     share insights, fostering a culture of intellectual
-                    curiosity among students and the broader community.
-                  </MDBCardText>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
-            <MDBCol>
-              <MDBCard className="feature_card">
-                <MDBCardBody>
-                  <MDBCardTitle>School Vans and Buses</MDBCardTitle>
-                  <MDBIcon className="ms-1 p-2" icon="bus-alt" size="8x" />
-                  <MDBCardText className="truncated-text">
-                    Our school vans and buses, ensure safe and reliable
+                    curiosity among students and the broader community."
+              icon="home"
+            />
+            <HiddenTextComponent
+              title="School Bus"
+              initialText="Our school vans and buses, ensure safe and reliable
                     transportation, providing students with a secure commute.
                     This service facilitates access to education and gives
                     parents confidence in their children's safety during
-                    journeys.
-                  </MDBCardText>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
-            <MDBCol>
-              <MDBCard className="feature_card">
-                <MDBCardBody>
-                  <MDBCardTitle>Library</MDBCardTitle>
-                  <MDBIcon className="ms-1 p-2" icon="book-open" size="8x" />
-                  <MDBCardText className="truncated-text">
-                    Our library, a haven for avid readers, houses a diverse
+                    journeys."
+              icon="bus-alt"
+            />
+            <HiddenTextComponent
+              title="Library"
+              initialText="Our library, a haven for avid readers, houses a diverse
                     collection of books, journals, and digital resources. With
                     dedicated study areas, it encourages academic excellence and
                     the joy of reading, expanding students' intellectual
-                    horizons.
-                  </MDBCardText>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
+                    horizons."
+              icon="book-open"
+            />
           </MDBRow>
         </MDBContainer>
       </MDBContainer>
@@ -202,18 +195,18 @@ const Home = () => {
       <br />
       <br />
 
-      <MDBContainer className="bg_principle p-5">
+      <MDBContainer className="bg_principal p-5">
         <figure className="text-start fs-2 mb-0">
           <MDBTypography blockquote>
             <p>Message!</p>
           </MDBTypography>
           <figcaption className="blockquote-footer mb-0">
-            From the <cite title="Source Title">Principle’s Desk!</cite>
+            From the <cite title="Source Title">principal’s Desk!</cite>
           </figcaption>
         </figure>
         <p className="fw-bold lead fs-1"></p>
         <div className="text-center">
-          <MDBCard className="card_principle shadow">
+          <MDBCard className="card_principal shadow">
             <MDBRow className="g-0">
               <MDBCol md="6">
                 <MDBCardImage
@@ -223,9 +216,9 @@ const Home = () => {
                   fluid
                 />
               </MDBCol>
-              <MDBCol className="card_body_principle" md="6">
+              <MDBCol className="card_body_principal" md="6">
                 <MDBCardBody>
-                  <MDBCardTitle>Miss. Varsha S. Yadav (Jadbansi)</MDBCardTitle>
+                  <MDBCardTitle>Ku. Varsha B. Jadbansi</MDBCardTitle>
                   <MDBCardText>
                     Dear students, your education is the passport to your
                     future. Embrace challenges, work hard, and believe in

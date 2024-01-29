@@ -47,29 +47,34 @@ export default function Footer() {
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
                 <MDBIcon icon="gem" className="me-3" />
-                New High School Mains
+                New High School Main
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                <p>
+                  Join us as we celebrate a century of excellence in education
+                  at New High School Main 100th-anniversary
+                  <a href="https://www.canva.com/design/DAF4znLXz68/FjINr3r5GltaB_UMu3Jx9w/view?utm_content=DAF4znLXz68&utm_campaign=designshare&utm_medium=link&utm_source=editor">
+                    {" "}
+                    Know More...
+                  </a>
+                </p>
               </p>
             </MDBCol>
 
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Important Links</h6>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#/" className="text-reset">
                   Home
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#/about" className="text-reset">
                   About
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#/contact" className="text-reset">
                   Contact Us
                 </a>
               </p>
@@ -78,22 +83,22 @@ export default function Footer() {
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#/alumini" className="text-reset">
                   Alumini
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#/academics" className="text-reset">
                   Academics
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#/events" className="text-reset">
                   Events
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#/photogallery" className="text-reset">
                   PhotoGallery
                 </a>
               </p>
@@ -103,17 +108,17 @@ export default function Footer() {
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                New High School Mains, Sham chouk, Amravati.
+                New High School Main, Jog chowk, Amravati.
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                principal.nhsm@gmail.com
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+                <MDBIcon icon="phone" className="me-3" /> +91 721 295 1588
               </p>
               <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+                <MDBIcon icon="mobile" className="me-3" /> +91- 950 365 315 7
               </p>
             </MDBCol>
           </MDBRow>
@@ -126,7 +131,7 @@ export default function Footer() {
       >
         © 2021 Copyright:
         <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-          NVSMNHSM.com
+          NHSM1924.com
         </a>
       </div>
     </MDBFooter>

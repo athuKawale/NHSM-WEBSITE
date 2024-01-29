@@ -26,28 +26,27 @@ const Contact = () => {
             <div className="text-start">
               <p className="fs-3">Address!</p>
               <p className="fs-6">
-                Survey No.43/1B & 45, Sulikunte Village, <br />
-                Dommasandra Post,
+                Jog Chowk, Sham Square
                 <br />
-                Bangalore-562125.
+                Amravati Post,
+                <br />
+                Amravati-444601.
               </p>
 
               <p className="fs-3">Call!</p>
               <p className="fs-6">
-                Phone : 080-22518100 080-27822260 <br />
-                Mobile : +91- 9663783617 +91- 6364547474
+                Phone : +91 721 295 1588 <br />
+                Mobile : +91- 9503653157
                 <br />
-                Cambridge : +91-9663115148 / 080 -22518130 080-22518140
+                Alternate Mobile : +91- 9403053107
               </p>
 
               <p className="fs-3">Contact Timings!</p>
               <p className="fs-6">
-                Monday – Friday : 8.30 am to 3.30 pm <br />
-                Saturday : 8.30 am to 12.30 pm
+                Monday – Friday : 11 am to 5.30 pm <br />
+                Saturday : 7.30 am to 12.30 pm
                 <br />
-                Fax : +91-80- 2657 2787 <br />
-                Email : contact@east.dpsbangalore.edu.in ,
-                admissions@east.dpsbangalore.edu.in
+                Email : principal.nhsm@gmail.com
               </p>
             </div>
           </MDBCol>

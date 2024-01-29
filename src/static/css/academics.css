@@ -1,0 +1,9 @@
+.accordion-item .accordion-button {
+  border-top-left-radius: var(--mdb-accordion-inner-border-radius);
+  border-top-right-radius: var(--mdb-accordion-inner-border-radius);
+  font-weight: bold;
+}
+
+.font_rules {
+  text-align: justify;
+}

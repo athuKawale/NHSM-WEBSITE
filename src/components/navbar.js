@@ -132,7 +132,7 @@ export default function Navbar() {
                     active={location.pathname === "/alumini"}
                     href="#/alumini"
                   >
-                    Alumini
+                    Alumni
                   </MDBNavbarLink>
                 </MDBNavbarItem>
 
@@ -154,7 +154,7 @@ export default function Navbar() {
         <MDBContainer breakpoint="sm" className="moving-text-cont" fluid>
           <p className="moving-text m-0">
             Join us in celebrating a century of academic excellence at Nutan
-            Vidarbha Shikshan Mandal's New High School Mains, Amravati – 100
+            Vidarbha Shikshan Mandal's New High School Main, Amravati – 100
             years of shaping minds and creating memories!
           </p>
         </MDBContainer>

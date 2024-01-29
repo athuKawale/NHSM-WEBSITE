@@ -2,7 +2,14 @@
   cursor: url("../images/cursor.png") 10 10, auto;
 }
 
-.bg_principle {
+.lora-font {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 55px;
+  font-style: normal;
+}
+
+.bg_principal {
   /* background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
     radial-gradient(
       91% 146%,
@@ -18,11 +25,11 @@
   background-color: #ffcc00; /* Set the background color on hover */
 }
 
-.card_principle {
+.card_principal {
   max-width: 1000px;
 }
 
-.card_body_principle {
+.card_body_principal {
   /* background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
     radial-gradient(
       91% 146%,
@@ -47,11 +54,8 @@
   padding-right: 200px;
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
-.truncated-text {
-}
 .mobile_update {
   font-size: 18px;
 }
@@ -65,38 +69,15 @@
     border-radius: 20px;
   }
 
-  .truncated-text {
-    white-space: nowrap; /* Prevent text from wrapping onto the next line */
-    overflow: hidden; /* Hide any content that overflows the box */
-    text-overflow: ellipsis; /* Display an ellipsis (...) to indicate truncated text */
-    max-width: 200px; /* Set a maximum width for the container */
-    transition: max-width 0.3s ease;
+  .hidden-text {
+    display: none;
   }
 
-  .truncated-text:hover {
-    text-align: justify;
-    white-space: normal; /* Allow text to wrap */
-    max-width: none; /* Remove the max-width limit on hover or click */
+  .visible-text {
+    display: block;
   }
 
   .mobile_update {
-    white-space: nowrap; /* Prevent text from wrapping onto the next line */
     font-size: 16px;
-    overflow: hidden; /* Hide any content that overflows the box */
-    text-overflow: ellipsis; /* Display an ellipsis (...) to indicate truncated text */
-    max-width: 400px; /* Set a maximum width for the container */
-    max-height: 110px;
-    transition: max-width 0.3s ease;
-  }
-
-  .mobile_update {
-    text-align: justify;
-    white-space: normal; /* Allow text to wrap */
-    max-width: none; /* Remove the max-width limit on hover or click */
-  }
-  .truncated-text:hover {
-    text-align: justify;
-    white-space: normal; /* Allow text to wrap */
-    max-width: none; /* Remove the max-width limit on hover or click */
   }
 }

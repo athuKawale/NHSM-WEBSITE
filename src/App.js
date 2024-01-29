@@ -11,7 +11,7 @@ import Alumini from "./components/alumini";
 import History from "./components/history";
 import Staff from "./components/staff";
 
-function App() {
+const App = () => {
   return (
     <>
       <Router>
@@ -40,6 +40,6 @@ function App() {
       </Router>
     </>
   );
-}
+};
 
 export default App;

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.81b19977.css",
-    "main.js": "/static/js/main.f88b6879.js",
+    "main.css": "/static/css/main.cc7eeec5.css",
+    "main.js": "/static/js/main.cf931b16.js",
     "static/js/787.0b7870b6.chunk.js": "/static/js/787.0b7870b6.chunk.js",
     "static/media/IMG_20240107_131019.jpg": "/static/media/IMG_20240107_131019.3abaa565790a5e9725db.jpg",
     "static/media/PAN_9809.JPG": "/static/media/PAN_9809.5498a6b7024ef04d0e4a.JPG",
@@ -72,12 +72,12 @@
     "static/media/Singalwar madam.JPG": "/static/media/Singalwar madam.08a6fdd689c3cff053e7.JPG",
     "static/media/11.jpeg": "/static/media/11.07c917b3d35f12564b0d.jpeg",
     "index.html": "/index.html",
-    "main.81b19977.css.map": "/static/css/main.81b19977.css.map",
-    "main.f88b6879.js.map": "/static/js/main.f88b6879.js.map",
+    "main.cc7eeec5.css.map": "/static/css/main.cc7eeec5.css.map",
+    "main.cf931b16.js.map": "/static/js/main.cf931b16.js.map",
     "787.0b7870b6.chunk.js.map": "/static/js/787.0b7870b6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81b19977.css",
-    "static/js/main.f88b6879.js"
+    "static/css/main.cc7eeec5.css",
+    "static/js/main.cf931b16.js"
   ]
 }
